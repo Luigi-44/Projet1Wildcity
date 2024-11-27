@@ -99,7 +99,9 @@ main {
                 margin-bottom: 1rem;
             }
 
-            p {}
+            p {
+                margin: 0.5rem 0;
+            }
 
             h4 {
                 font-family: var(--font-titre);
