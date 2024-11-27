@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Lexend:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --font-titre: "Montserrat", sans-serif;
+    --color-text: #ffffff;
+    --size-titre-h2: ;
+    --color-article-background: #334A5E;
+
+}
+
+main {
+    width: 100vw;
+    height: 100%;
+    background-color: #1D2A35;
+    color: var(--color-text);
+}
+
+.restaurants {
+    display: flex;
+    flex-direction: column;
+
+    h2 {
+        font-family: var(--font-titre);
+    }
+
+    /* 1er restaurants */
+    .Volière {
+        width: 90%;
+        height: 50vh;
+        margin: 2rem auto;
+        border-radius: 5px;
+        border: #ffffff solid 2px;
+        background-color: #334A5E;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        .la_voliere {
+            object-fit: contain;
+
+            width: 35vw;
+            height: 40vh;
+        }
+
+        .div1 {
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            width: 30%;
+            flex-direction: column;
+            margin: auto;
+
+            h3 {
+                font-family: var(--font-titre);
+                margin-bottom: 1rem;
+            }
+
+            p {
+                margin: 0.5rem 0;
+            }
+
+            h4 {
+                font-family: var(--font-titre);
+                margin-bottom: 1rem;
+            }
+
+        }
+    }
+
+    /* 2eme restaurant */
+    .poules_en_fete {
+        width: 90%;
+        height: 50vh;
+        margin: 2rem auto;
+        border-radius: 5px;
+        border: #ffffff solid 2px;
+        background-color: #334A5E;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        img {
+            object-fit: contain;
+
+            width: 35vw;
+            height: 40vh;
+        }
+
+        .div2 {
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            width: 30%;
+            flex-direction: column;
+            margin: auto;
+
+            h3 {
+                font-family: var(--font-titre);
+                margin-bottom: 1rem;
+            }
+
+            p {}
+
+            h4 {
+                font-family: var(--font-titre);
+                margin-top: 1rem;
+
+            }
+        }
+    }
+
+
+    /* 3eme restaurant */
+    .coq_table {
+        width: 90%;
+        height: 50vh;
+        margin: 2rem auto;
+        border-radius: 5px;
+        border: #ffffff solid 2px;
+        background-color: #334A5E;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        img {
+            object-fit: contain;
+
+            width: 35vw;
+            height: 40vh;
+        }
+
+        .div3 {
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            width: 30%;
+            flex-direction: column;
+            margin: auto;
+
+            h3 {
+                font-family: var(--font-titre);
+                margin-bottom: 1rem;
+            }
+
+            p {
+                margin: 0.5rem 0;
+            }
+
+            h4 {
+                font-family: var(--font-titre);
+                margin-bottom: 1rem;
+            }
+        }
+    }
+}
