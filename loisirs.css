@@ -18,11 +18,11 @@ main {
     color: var(--color-text);
 }
 
-.bars {
+.sport {
     margin-bottom: 3px;
 }
 
-.img_bar {
+.img_sport {
     max-width: 50%;
     min-width: 600px;
     height: auto;
@@ -42,6 +42,7 @@ main {
     width: 80%;
     margin: 0 auto;
     margin-bottom: 3rem;
+
 
     .div1 {
         display: flex;
@@ -65,7 +66,7 @@ main {
     }
 }
 
-.img_bar2 {
+.img_sport2 {
     width: 100%;
     height: auto;
     border-radius: 8px;
@@ -73,7 +74,7 @@ main {
 }
 
 /* 2eme bar */
-.roti {
+.swing {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -110,7 +111,7 @@ main {
 
 
 /* 3eme restaurant */
-.caille {
+.poulepong {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -145,7 +146,7 @@ main {
     }
 }
 
-.perchoir {
+.chicken_ball {
     display: flex;
     align-items: center;
     flex-direction: column;
