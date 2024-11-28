@@ -13,6 +13,9 @@ body {
                         height: 300px;
                         width: 100%;
                     }
+                    h2 {
+                        color: white;
+                    }
             }
 }
 .conteneur  {
@@ -32,15 +35,16 @@ body {
 
                 article{
                     display: flex;
-                    background-color: red;
+                    background-color:#334A5E;
                     border: 1px solid white;
                         img {
-                                width: 200px;
+                                width: 50%;
                                 
                         }
                     .TP{   
                         display:flex;
                         flex-direction: column;
+                        
                         
                         
                         p { 
@@ -49,6 +53,7 @@ body {
                         }
                         h3{
                             color: white;
+                            justify-content: center;
                         }
                         
                 }
