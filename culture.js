@@ -1,85 +1,70 @@
-// Sélection de l'élément principal où ajouter du contenu
-const main = document.querySelector("main");
+document.addEventListener("DOMContentLoaded", () => {
+    // Charger la navbar dynamiquement
+    fetch("index.html")
+        .then(response => {
+            if (!response.ok) throw new Error("Erreur lors du chargement de la navbar");
+            return response.text();
+        })
+        .then(data => {
+            // Insère la navbar dans l'élément avec l'id "navbar"
+            const navbarContainer = document.createElement("div");
+            navbarContainer.id = "navbar";
+            navbarContainer.innerHTML = data;
+            document.body.prepend(navbarContainer); // Ajoute la navbar en haut de la page
+        })
+        .catch(error => console.error("Erreur : ", error));
 
-// Données pour générer du contenu
-const sectionsData = [
-    {
-        title: "Cinéma",
-        events: [
-            {
-                imgSrc: "./images/plume.d'or.webp",
-                title: "Festival de la Plume d’Or",
-                date: "15 décembre 2024",
-                location: "Place des Cocoricos",
-                description:
-                    "La ville se prépare pour la 10ᵉ édition du Festival de la Plume d’Or, un concours artistique où les habitants décorent leurs plumes avec des motifs colorés. Cette année, le thème est “Plume et Popcorn”.",
-                joke: "Pourquoi les poulets peignent-ils leurs plumes ? Parce que c’est plus chic que de changer de veste !",
-            },
-            {
-                imgSrc: "./images/expo.webp",
-                title: "Le Wild Film Fest",
-                description:
-                    "Chaque printemps, Wild City vibre au rythme du Wild Film Fest, un festival où les talents locaux sont à l’honneur.",
-            },
-        ],
-    },
-    {
-        title: "Théâtre",
-        events: [
-            {
-                imgSrc: "./images/theatre.webp",
-                title: "Roméo et Coqulettes",
-                description:
-                    "Un spectacle humoristique qui revisite le classique de Shakespeare avec une touche de poulailler.",
-            },
-        ],
-    },
-];
+    // Gestion des cartes dans .one-x et .two-x
+    const cards = document.querySelectorAll(".one-x div, .two-x div");
 
-// Fonction pour créer une section
-function createSection(section) {
-    const article = document.createElement("article");
-    const titleDiv = document.createElement("div");
-    titleDiv.classList.add("title1");
-    const h2 = document.createElement("h2");
-    h2.textContent = section.title;
-    titleDiv.appendChild(h2);
-    article.appendChild(titleDiv);
+    // Fonction pour gérer l'affichage en fonction de la largeur de l'écran
+    function handleResize() {
+        if (window.innerWidth < 900) {
+            // Affiche tous les éléments (img, h3, p) pour écran < 900px
+            cards.forEach(card => {
+                const img = card.querySelector("img");
+                const p = card.querySelector("p");
 
-    section.events.forEach((event) => {
-        const eventSection = document.createElement("section");
-        eventSection.classList.add("one");
+                img.style.display = "block"; // Affiche l'image
+                p.style.display = "block";  // Affiche le paragraphe
+            });
+        } else {
+            // Réinitialise l'état par défaut pour écran >= 900px
+            cards.forEach(card => {
+                const img = card.querySelector("img");
+                const p = card.querySelector("p");
 
-        const img = document.createElement("img");
-        img.src = event.imgSrc;
-        img.alt = event.title;
-        img.classList.add("image");
+                img.style.display = "block"; // Affiche l'image
+                p.style.display = "none";   // Cache le paragraphe
+            });
+        }
+    }
 
-        const eventInfo = document.createElement("div");
-        const eventTitle = document.createElement("h3");
-        eventTitle.textContent = event.title;
+    // Initialisation
+    handleResize();
 
-        const eventDescription = document.createElement("p");
-        eventDescription.innerHTML = `
-            Date : ${event.date || "N/A"} <br>
-            Lieu : ${event.location || "N/A"} <br>
-            Description : ${event.description} <br>
-            ${event.joke ? `<strong>Blague :</strong> ${event.joke}` : ""}
-        `;
+    // Attache l'événement resize pour surveiller les changements de taille
+    window.addEventListener("resize", handleResize);
 
-        eventInfo.appendChild(eventTitle);
-        eventInfo.appendChild(eventDescription);
+    // Gestion du clic pour les cartes
+    cards.forEach(card => {
+        const img = card.querySelector("img");
+        const h3 = card.querySelector("h3");
+        const p = card.querySelector("p");
 
-        eventSection.appendChild(img);
-        eventSection.appendChild(eventInfo);
-        article.appendChild(eventSection);
+        // Initialisation : seul le h3 et l'image sont visibles
+        p.style.display = "none";
+
+        card.addEventListener("click", () => {
+            if (p.style.display === "none") {
+                // Affiche le titre (h3) et le paragraphe (p), masque l'image
+                img.style.display = "none";
+                p.style.display = "block";
+            } else {
+                // Retour à l'état initial : affiche l'image et le titre, masque le paragraphe
+                img.style.display = "block";
+                p.style.display = "none";
+            }
+        });
     });
-
-    return article;
-}
-
-// Générer les sections et les ajouter au DOM
-sectionsData.forEach((section) => {
-    const sectionElement = createSection(section);
-    main.appendChild(sectionElement);
 });
