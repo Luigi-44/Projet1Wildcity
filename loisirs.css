@@ -27,6 +27,14 @@ main {
     min-width: 600px;
     height: auto;
     border-radius: 10px;
+
+    @media screen and (width <=600px) {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+        margin-bottom: 20px;
+
+    }
 }
 
 /* 1er sport */
@@ -42,6 +50,10 @@ main {
     width: 80%;
     margin: 0 auto;
     margin-bottom: 3rem;
+
+    @media screen and (width <=600px) {
+        display: none;
+    }
 
 
     .div1 {
@@ -63,6 +75,11 @@ main {
         h4 {
             margin-bottom: 1rem;
         }
+
+        @media screen and (width <=600px) {
+            width: 80%;
+        }
+
     }
 }
 
@@ -86,6 +103,11 @@ main {
     width: 33%;
     margin: 0 auto;
 
+    @media screen and (width <=600px) {
+        width: 100%;
+        margin-bottom: 48px;
+    }
+
     .div2 {
         display: flex;
         align-items: flex-start;
@@ -100,6 +122,11 @@ main {
 
         p {
             margin: 0.5rem 0;
+            display: none;
+
+            @media screen and (width <=600px) {
+                display: block;
+            }
         }
 
         h4 {
@@ -123,6 +150,11 @@ main {
     width: 33%;
     margin: 0 auto;
 
+    @media screen and (width <=600px) {
+        width: 100%;
+        margin-bottom: 48px;
+    }
+
     .div3 {
         display: flex;
         align-items: flex-start;
@@ -137,6 +169,11 @@ main {
 
         p {
             margin: 0.5rem 0;
+            display: none;
+
+            @media screen and (width <=600px) {
+                display: block;
+            }
         }
 
         h4 {
@@ -158,6 +195,11 @@ main {
     width: 33%;
     margin: 0 auto;
 
+    @media screen and (width <=600px) {
+        width: 100%;
+        margin-bottom: 48px;
+    }
+
     .div5 {
         display: flex;
         align-items: flex-start;
@@ -172,6 +214,11 @@ main {
 
         p {
             margin: 0.5rem 0;
+            display: none;
+
+            @media screen and (width <=600px) {
+                display: block;
+            }
         }
 
         h4 {
@@ -187,4 +234,8 @@ main {
     width: 80%;
     gap: 3px;
     margin: 0 auto;
+
+    @media screen and (width <=600px) {
+        flex-direction: column;
+    }
 }

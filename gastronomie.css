@@ -30,6 +30,9 @@ main {
 
     @media screen and (width <=600px) {
         width: 100%;
+        height: auto;
+        border-radius: 8px;
+        margin-bottom: 20px;
 
     }
 }
@@ -49,8 +52,10 @@ main {
     margin-bottom: 3rem;
 
     @media screen and (width <=600px) {
-        flex-direction: column;
+        display: none;
     }
+
+
 
     .div1 {
         display: flex;
@@ -83,9 +88,10 @@ main {
     height: auto;
     border-radius: 8px;
     margin-bottom: 20px;
+
 }
 
-/* 2eme bar */
+/* 1er bar */
 .roti {
     display: flex;
     align-items: center;
@@ -117,17 +123,21 @@ main {
 
         p {
             margin: 0.5rem 0;
+            display: none;
+
+            @media screen and (width <=600px) {
+                display: block;
+            }
         }
 
         h4 {
             margin-top: 1rem;
-
         }
     }
 }
 
 
-/* 3eme restaurant */
+/* 2eme bar */
 .caille {
     display: flex;
     align-items: center;
@@ -159,6 +169,11 @@ main {
 
         p {
             margin: 0.5rem 0;
+            display: none;
+
+            @media screen and (width <=600px) {
+                display: block;
+            }
         }
 
         h4 {
@@ -168,6 +183,7 @@ main {
     }
 }
 
+/* 3eme bar */
 .perchoir {
     display: flex;
     align-items: center;
@@ -181,7 +197,8 @@ main {
     margin: 0 auto;
 
     @media screen and (width <=600px) {
-        display: none;
+        width: 100%;
+        margin-bottom: 48px;
     }
 
     .div5 {
@@ -198,6 +215,11 @@ main {
 
         p {
             margin: 0.5rem 0;
+            display: none;
+
+            @media screen and (width <=600px) {
+                display: block;
+            }
         }
 
         h4 {
