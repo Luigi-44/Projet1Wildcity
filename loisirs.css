@@ -29,7 +29,7 @@ main {
     border-radius: 10px;
 }
 
-/* 1er bar */
+/* 1er sport */
 .mise_en_avant {
     display: flex;
     align-items: center;
@@ -73,7 +73,7 @@ main {
     margin-bottom: 20px;
 }
 
-/* 2eme bar */
+/* 2eme sport */
 .swing {
     display: flex;
     align-items: center;
@@ -110,7 +110,7 @@ main {
 }
 
 
-/* 3eme restaurant */
+/* 3eme sport */
 .poulepong {
     display: flex;
     align-items: center;
