@@ -1,19 +1,4 @@
 document.addEventListener("DOMContentLoaded", () => {
-    // Charger la navbar dynamiquement
-    fetch("index.html")
-        .then(response => {
-            if (!response.ok) throw new Error("Erreur lors du chargement de la navbar");
-            return response.text();
-        })
-        .then(data => {
-            // Insère la navbar dans l'élément avec l'id "navbar"
-            const navbarContainer = document.createElement("div");
-            navbarContainer.id = "navbar";
-            navbarContainer.innerHTML = data;
-            document.body.prepend(navbarContainer); // Ajoute la navbar en haut de la page
-        })
-        .catch(error => console.error("Erreur : ", error));
-
     // Gestion des cartes dans .one-x et .two-x
     const cards = document.querySelectorAll(".one-x div, .two-x div");
 
