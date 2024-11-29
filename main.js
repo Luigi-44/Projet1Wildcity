@@ -53,3 +53,15 @@ items.forEach(item => {
         showFeaturedArticle(item);  // Afficher l'article cliqué dans la section mis en avant
     });
 });
+
+window.addEventListener("scroll", () => {
+    const nav = document.querySelector("nav");
+    const searchBar = document.querySelector(".search-bar");
+    if (window.scrollY > 20) {
+        // 20px correspond à environ 2 cm
+        nav.classList.add("shrink");
+    } else {
+        nav.classList.remove("shrink");
+    }
+});
+
