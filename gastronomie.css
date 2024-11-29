@@ -6,7 +6,6 @@
 
 :root {
     --color-text: #ffffff;
-    --size-titre-h2: ;
     --color-article-background: #334A5E;
 
 }
@@ -89,6 +88,7 @@ main {
     border-radius: 8px;
     margin-bottom: 20px;
 
+
 }
 
 /* 1er bar */
@@ -104,6 +104,11 @@ main {
     width: 33%;
     margin: 0 auto;
 
+    &:hover {
+        transition: ease-in-out 0.5s;
+        scale: 1.1;
+    }
+
     @media screen and (width <=600px) {
         width: 100%;
         margin-bottom: 48px;
@@ -116,6 +121,7 @@ main {
         width: 80%;
         flex-direction: column;
         margin: auto;
+
 
         h3 {
             margin-bottom: 1rem;
@@ -133,7 +139,9 @@ main {
         h4 {
             margin-top: 1rem;
         }
+
     }
+
 }
 
 
@@ -149,6 +157,11 @@ main {
     height: auto;
     width: 33%;
     margin: 0 auto;
+
+    &:hover {
+        transition: ease-in-out 0.5s;
+        scale: 1.1;
+    }
 
     @media screen and (width <=600px) {
         width: 100%;
@@ -195,6 +208,11 @@ main {
     height: auto;
     width: 33%;
     margin: 0 auto;
+
+    &:hover {
+        transition: ease-in-out 0.5s;
+        scale: 1.1;
+    }
 
     @media screen and (width <=600px) {
         width: 100%;
