@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Serif+Georgian:wght@100..900&family=Roboto&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  background-color: var(--background);
+  font-family: var(--font-family-p);
+}
+
+:root {
+  --text-color: #e0e0e0;
+  --color-segondary: #97b7d3;
+  --background: #1d2a35;
+  --font-family-h: "Noto Serif Georgian", serif;
+  --font-family-p: "Montserrat", sans-serif;
+}
+
+header {
+  background-image: url(./assets/images/CentrVille.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  background-position: center;
+  position: relative;
+  margin-bottom: 10px;
+  top: -5px;
+  filter: opacity(0.5);
+  margin-top: -5px;
+  
+  nav {
+    display: flex;
+    color: white;
+    margin: 10px auto;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    padding: 10px 2rem;
+    border-radius: 50px;
+    background-color: #1d2a3500;
+    backdrop-filter: blur(3px);
+    border: #2c598080 solid 2px;
+    box-shadow: var(--background) 0 2px 2px 2px;
+  }
+
+  nav p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0;
+  }
+
+  nav a {
+    color: var(--text-color);
+  }
+
+  nav ul {
+    display: flex;
+    gap: 1.5rem;
+    margin-left: 20rem;
+  }
+
+  nav ul a.default {
+    color: var(--color-segondary);
+    text-decoration: underline 2px;
+    text-underline-offset: 10px;
+  }
+
+  nav ul a:hover {
+    transition: 0.3s;
+    color: var(--color-segondary);
+    text-decoration: underline 2px;
+    text-underline-offset: 10px;
+  }
+
+  .search-bar {
+    width: 400px;
+    margin-right: 10rem;
+    padding: 7px 10px;
+    font-size: 1rem;
+    border: 1px solid var(--border-color, #ccc);
+    border-radius: 25px;
+    outline: none;
+    transition: all 0.1s ease;
+    background-color: rgba(190, 190, 190, 0.171);
+    color: var(--text-color);
+  }
+
+  .search-bar::placeholder {
+    color: var(--placeholder-color, #aaa);
+    font-style: italic;
+  }
+
+  article {
+    .presentation {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      gap: 100px;
+
+      #descriptif {
+        font-family: var(--font-family-p);
+
+        #histoire {
+          position: absolute; 
+          top: 10px; 
+          right: inherit; 
+          left: auto;
+        
+      }
+    }
+  }
+}
+
+main {
+  .topi {
+    flex: 1 0 100%;
+  }
+}
