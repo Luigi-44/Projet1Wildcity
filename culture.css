@@ -59,6 +59,19 @@ header {
 
     }
 }
+#countdown-container {
+    text-align: center;
+    margin-top: 20px;
+}
+#countdown {
+    font-size: 2em;
+    font-weight: bold;
+    color: #ff5733;  /* Couleur vive pour attirer l'attention */
+}
+#countdown-container h2 {
+    font-size: 1.5em;
+    color: #333;
+}
 
 nav {
     display: flex;
