@@ -1,19 +1,4 @@
 document.addEventListener("DOMContentLoaded", () => {
-    // Charger la navbar dynamiquement
-    fetch("index.html")
-        .then(response => {
-            if (!response.ok) throw new Error("Erreur lors du chargement de la navbar");
-            return response.text();
-        })
-        .then(data => {
-            // Insère la navbar dans l'élément avec l'id "navbar"
-            const navbarContainer = document.createElement("div");
-            navbarContainer.id = "navbar";
-            navbarContainer.innerHTML = data;
-            document.body.prepend(navbarContainer); // Ajoute la navbar en haut de la page
-        })
-        .catch(error => console.error("Erreur : ", error));
-
     // Gestion des cartes dans .one-x et .two-x
     const cards = document.querySelectorAll(".one-x div, .two-x div");
 
@@ -40,7 +25,22 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     }
 
-    // Initialisation
+    const searchBar = document.querySelector(".search-bar");
+
+    // Ajout de l'événement "input" pour la recherche
+    searchBar.addEventListener("input", (m) => {
+        const result = m.target.value.toLowerCase(); // Récupère la valeur entrée dans la barre de recherche
+    
+        // Sélectionne tous les éléments <section> dans les <article>
+        const sections = document.querySelectorAll("main article section");
+    
+        // Parcourt chaque section et applique le filtre
+        sections.forEach(section => {
+            const text = section.textContent.toLowerCase(); // Texte de la section
+            section.style.display = text.includes(result) ? '' : 'none'; // Affiche ou masque
+        });
+    });
+    // // Initialisation
     handleResize();
 
     // Attache l'événement resize pour surveiller les changements de taille
@@ -67,4 +67,31 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         });
     });
+
+    // Sélectionne l'élément du compte à rebours
+const countdown = document.getElementById("countdown");
+const event = document.getElementsByClassName("one")
+// Définis la date de l'événement
+const eventDate = new Date("2024-12-25T20:00:00").getTime();
+
+// Met à jour le compte à rebours toutes les secondes
+const updateCountdown = setInterval(function() {
+  const now = new Date().getTime();  // Temps actuel
+  const timeRemaining = eventDate - now;  // Temps restant jusqu'à l'événement
+
+  // Calcul des jours, heures, minutes et secondes
+  const days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
+  const hours = Math.floor((timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  const minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
+  const seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
+
+  // Affiche le compte à rebours sur la page
+  countdown.innerHTML = `${days}j ${hours}h ${minutes}m ${seconds}s`;
+  
+  // Si l'événement est arrivé, affiche un message spécial
+  if (timeRemaining < 0) {
+    clearInterval(updateCountdown);  // Arrête le compte à rebours
+    countdown.innerHTML = "L'événement a commencé ! 🎉";
+  }
+}, 1000);  // Met à jour chaque seconde
 });
