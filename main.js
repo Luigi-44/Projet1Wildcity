@@ -27,6 +27,7 @@ function showFeaturedArticle(article) {
     featuredImage.src = imgSrc;  // Mettre à jour l'image dans l'article mis en avant
 }
 
+
 // Événement pour le bouton "Suivant"
 nextButton.addEventListener('click', () => {
     if (currentIndex < items.length - 1) {

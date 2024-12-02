@@ -21,6 +21,11 @@ body {
     color: #DADADA;
     list-style: none;
     text-decoration: none;
+
+    .h2sportetFS {
+        font-size: 60px;
+        margin-left: 60px;
+    }
 }
 
 header {
@@ -155,32 +160,6 @@ header {
     }
 }
 
-/* header {
-    
-
-
-    background: linear-gradient(rgba(160, 51, 51, 0), #1d2a35fd),
-        url(./assets/logo_gastronomie.jpeg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-
-    width: 100%;
-    height: 45vh;
-    margin-top: 0;
-    padding-bottom: 100px;
-    display: flex;
-    flex-direction: column-reverse;
-    justify-content: flex-start;
-    align-items: center;
-
-    position: sticky;
-    top: 0;
-    z-index: -1;
-} */
-
-
-
 /* Début Article en avant */
 .featured-article {
     background-color: var(--couleur2);
@@ -246,15 +225,19 @@ header {
 
 #featured-image {
     width: 600px;
-    min-width: 300px;
-    margin: 0;
+    height: auto;
     border-radius: 8px 0px 0px 8px;
+    margin-bottom: 100px;
+    /* padding-bottom: -200px; */
+    margin: 0;
+    display: block;
 
     @media screen and (max-width: 1130px) {
         width: 100%;
         border-radius: 8px 8px 0px 0px;
     }
 }
+
 
 /* Fin Article en avant */
 
@@ -266,6 +249,8 @@ header {
     position: relative;
     width: 80%;
     margin: 40px auto;
+    padding-bottom: 150px;
+    padding-top: 50px;
 }
 
 .carrousel {
@@ -292,8 +277,10 @@ header {
     border: 1px solid var(--couleur3);
     border-radius: 8px;
     text-align: center;
+    opacity: 0.7;
 
     h2 {
+        font-size: 30px;
         padding-bottom: 10px;
     }
 
@@ -314,9 +301,13 @@ header {
     }
 }
 
+
+
 .carrousel-item:hover {
     transition: ease-in-out 0.8s;
     scale: 1.02;
+    opacity: 1;
+    transition: opacity 0.8s ease;
 }
 
 .carrousel-item img {
@@ -326,8 +317,18 @@ header {
     margin-bottom: 20px;
 }
 
+.carrousel-item img:hover {
+    transition: 0, 5;
+
+    filter: blur(0px);
+}
+
+
+
+
 .carrousel-item h2 {
-    font-size: 1.5rem;
+    margin-left: 0px;
+    font-size: 30px;
     margin-bottom: 10px;
 }
 
@@ -341,7 +342,6 @@ header {
 .test1 {
     position: relative;
     left: -50px;
-
 }
 
 .test2 {
