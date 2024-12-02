@@ -499,7 +499,6 @@ header {
 
 #formulaire {
   width: 100%;
-  background-color: (44, 89, 128, 0.5);
   color: white;
   display: flex;
   flex-direction: column;
@@ -525,7 +524,7 @@ header {
 textarea {
   padding: 10px;
   width: 100%;
-  font-size: 20x;
+  font-size: 20px;
   border-radius: 10px;
 }
 
