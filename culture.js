@@ -68,3 +68,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 });
+document.getElementById("close-welcome").addEventListener("click", function () {
+    const overlay = document.getElementById("welcome-overlay");
+    overlay.style.display = "none"; // Cache la page de bienvenue
+  });
