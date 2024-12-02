@@ -11,6 +11,8 @@
 body {
   background-color: var(--background);
   font-family: var(--font-family-p);
+  max-width: 100vw;
+  overflow-x: hidden;
 }
 
 :root {
@@ -41,7 +43,7 @@ header {
     color: white;
     align-items: center;
     justify-content: space-between;
-    width: 90vh;
+    width: 80vh;
     padding: 10px 2rem;
     border-radius: 50px;
     background-color: rgba(29, 42, 53, 0.7);
@@ -57,7 +59,7 @@ header {
   }
 
   nav.shrink {
-    width: 60vh;
+    width: 50vh;
     padding: 6px 1rem;
     border-radius: 25px;
   }
@@ -176,8 +178,6 @@ header {
     padding-right: 50px;
     margin-top: -100px;
     gap: 30px;
-    background-color: grey;
-    backdrop-filter: blur(100px);
   }
   .histoire {
     font-family: var(--font-family-p);
@@ -252,6 +252,8 @@ header {
     gap: 20px;
     transition: transform 0.5s ease-in-out;
     z-index: 1;
+    will-change: transform; /* Optimisation pour les animations */
+    overflow: hidden; /* Pour éviter que les items sortent du conteneur */
   }
 
   .top-item {
@@ -481,12 +483,12 @@ header {
 
 .stars {
   font-size: 1.5rem;
-  color: #63636336;
+  color: #fdf900;
 }
 
 .stars::after {
   content: "☆";
-  color: #555;
+  color: #555555;
 }
 
 .contact {
@@ -506,7 +508,7 @@ header {
   align-items: center;
   border-radius: 5px;
   margin-top: -130px;
-  margin-left: 30vh;
+  /* margin-left: 10vh; */
 }
 
 .form-item {
@@ -589,14 +591,15 @@ textarea {
 
 .welcome-content h2 {
   font-size: 2.5rem;
-  color: #1d2a35;
+  color: var(--text-color);
   margin-bottom: 50px;
+  font-family: var(--font-family-h);
 }
 
 .welcome-content p {
   font-size: 1.2rem;
   margin-bottom: 100px;
-  color: #555;
+  color: var(--text-color);
 }
 
 .welcome-content button {
@@ -609,7 +612,7 @@ textarea {
   box-shadow: 0 2px 2px 0 #4d4d4dad;
   padding: 10px 90px;
   font-size: 1rem;
-  color: var();
+  color: var(--text-color);
   border-radius: 20px;
   cursor: pointer;
   transition: background-color 0.3s ease;
