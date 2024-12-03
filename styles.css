@@ -398,6 +398,11 @@ header {
   box-shadow: 0 4px 8px 0 #4d4d4dad;
 }
 
+.jsp-box:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px 0 #4d4d4dad;
+}
+
 .jsp-box3,
 .jsp-box4 {
   margin-top: 20px;
