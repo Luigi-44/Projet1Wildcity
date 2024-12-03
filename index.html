@@ -13,23 +13,24 @@
   </head>
   <body>
     <header>
-      <div class="test"></div>
+      <!-- NavBar Start-->
+      <div class="Background"></div>
       <nav>
-        <p><a href="index.html"></a></p>
         <ul>
           <li><a href="test.html" class="default">🏠</a></li>
           <li><a href="test.html">Gastronomie</a></li>
           <li><a href="">Loisirs</a></li>
           <li><a href="">Cultures</a></li>
           <li><a href="">News</a></li>
-          <!-- <li><a href="" class="search-icon-i">🏠</a></li> -->
         </ul>
         <div class="search-container">
           <input type="search" class="search-bar" placeholder="Rechercher..." />
-          <span class="search-icon">&#128269;</span>
+          <span class="search-icon" onclick="toggleSearchBar()">&#128269;</span>
         </div>
       </nav>
+      <!-- NavBar end-->
 
+      <!-- Histoire Start-->
       <article>
         <section class="presentation">
           <img src="./assets/images/logo.png" alt="Wild City" id="logo" />
@@ -48,9 +49,11 @@
           </div>
         </section>
       </article>
+      <!-- Histoire end-->
     </header>
 
     <main>
+      <!-- Top 3 Start-->
       <div class="topi">
         <h2>Top 3 à WildCity</h2>
         <div class="top-container">
@@ -78,7 +81,9 @@
           <button class="arrow right-arrow">&#8594;</button>
         </div>
       </div>
+      <!-- Top 3 end-->
 
+      <!-- Sorties Start-->
       <h3 id="sorties">Nos incontournables</h3>
       <div class="jsp">
         <div class="jsp-box">
@@ -128,9 +133,11 @@
           <img src="./assets/images/preview.webp" alt="preview" />
         </div>
       </div>
+      <!-- Sorties end-->
 
       <div class="line2"></div>
       <h3 id="avistitre">Avis</h3>
+      <!-- Avis Start-->
       <div class="avis-section">
         <div class="avis-container">
           <div class="avis-item">
@@ -165,11 +172,21 @@
             </p>
             <div class="stars">★★★★☆</div>
           </div>
+          <div class="avis-item">
+            <h3>Sophie Cocorette</h3>
+            <p>
+              Perfect for gallinaceous fans. I loved the safari Chicken coop. An
+              unforgettable experience!
+            </p>
+            <div class="stars">★★★★</div>
+          </div>
         </div>
+        <!-- Avis end-->
       </div>
     </main>
 
     <footer>
+      <!-- Contact Start-->
       <div class="contact">
         <h2>
           Contactez<br />
@@ -197,8 +214,10 @@
 
         <button id="btn" type="submit">Envoyer</button>
       </form>
+      <!-- Contact end-->
     </footer>
 
+    <!-- Bienvenue Start-->
     <div id="welcome-overlay" class="welcome-overlay">
       <div class="welcome-content">
         <h2>Bienvenue à WildCity !</h2>
@@ -206,7 +225,8 @@
         <button id="close-welcome">Entrer</button>
       </div>
     </div>
+    <!-- Bienvenue end-->
 
-    <script src="main.js"></script>
+    <script src="Accueill.js"></script>
   </body>
 </html>
