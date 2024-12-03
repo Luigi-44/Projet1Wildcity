@@ -186,6 +186,7 @@ h2 {
 }
 
 .mise_en_avant,
+.mise_en_avant2,
 .volière,
 .poules,
 .coq,
@@ -217,7 +218,8 @@ h2 {
 }
 }
 
-.mise_en_avant {
+.mise_en_avant,
+.mise_en_avant2 {
     display: flex;
     flex-direction: row;
     gap: 1rem;
@@ -233,7 +235,7 @@ h2 {
     width: 100%;
     height: auto;
     border-radius: 8px;
-    margin-bottom: 20px;
+
 }
 
 .div2, .div3, .div5 {
