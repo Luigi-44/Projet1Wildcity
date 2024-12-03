@@ -68,6 +68,12 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 
+const menuBurger = document.querySelector(".burger-menu")
+const navBar = document.querySelector("nav")
+menuBurger.addEventListener('click',()=>{
+    navBar.classList.toggle('mobile-menu')
+    });
+})
     // Sélectionne l'élément du compte à rebours
 const countdown = document.getElementById("countdown");
 const event = document.getElementsByClassName("one")
@@ -94,4 +100,3 @@ const updateCountdown = setInterval(function() {
     countdown.innerHTML = "L'événement a commencé ! 🎉";
   }
 }, 1000);  // Met à jour chaque seconde
-});
