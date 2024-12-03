@@ -178,6 +178,10 @@ h2{
     text-align: center;
 }
 
+main {
+    margin-bottom: 10rem;
+}
+
 article {
     display: flex;
     align-items: left;
@@ -218,5 +222,21 @@ article {
             background-color: #ffffff;
             color: black;
         }
+    }
+}
+
+footer {
+    display: flex;
+    width: 100%;
+    background-color: #334A5E;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 1rem 0rem;
+    margin-bottom: 0;
+    padding: 2rem 0rem;
+
+    p {
+        margin: 0rem;
     }
 }

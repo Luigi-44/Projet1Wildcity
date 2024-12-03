@@ -183,6 +183,7 @@ main {
     height: 100%;
     background-color: var(--background-color);
     color: var(--color-text);
+    margin-bottom: 10rem;
 }
 h1 {
     text-align: center;
@@ -301,5 +302,21 @@ h2 {
 
     @media screen and (max-width: 600px) {
         flex-direction: column;
+    }
+}
+
+footer {
+    display: flex;
+    width: 100%;
+    background-color: #334A5E;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 1rem 0rem;
+    margin-bottom: 0;
+    padding: 2rem 0rem;
+
+    p {
+        margin: 0rem;
     }
 }
