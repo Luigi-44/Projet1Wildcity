@@ -3,9 +3,10 @@
 * {
     font-family: "Montserrat", sans-serif;
     color: #ffffff;
-    background-color: #1D2A35 ;
     margin: 0;
     padding: 0;
+    list-style: none;
+    text-decoration: none;
 }
 
 :root{
@@ -30,10 +31,10 @@ header {
 
     nav {
         display: flex;
-        color: var(--couleur3);
+        color: white;
         align-items: center;
         justify-content: space-between;
-        width: 90vh;
+        width: 42rem;
         padding: 10px 2rem;
         border-radius: 50px;
         background-color: rgba(29, 42, 53, 0.7);
@@ -46,56 +47,78 @@ header {
         transform: translateX(-50%);
         z-index: 10;
         transition: all 0.3s ease;
-        font-family: var(--typoPrincipal);
+        cursor: pointer;
+        }
     }
-
-    nav.shrink {
-        width: 60vh;
+    
+        @media (max-width: 768px) {
+        nav {
+            width: 25rem;
+            padding: 8px 1rem;
+            border-radius: 20px;
+        }
+    
+        nav ul {
+            gap: 1rem;
+        }
+    
+        .search-bar {
+            display: none;
+        }
+    
+        .search-icon {
+            display: none;
+            cursor: pointer;
+        }
+        }
+    
+        nav.shrink {
+        width: 27rem;
         padding: 6px 1rem;
         border-radius: 25px;
-    }
-
-    nav p {
+        }
+    
+        nav p {
         font-size: 1.5rem;
         font-weight: bold;
         margin: 0;
-    }
-
-    nav a {
+        }
+    
+        nav a {
         color: var(--text-color);
-    }
-
-    nav ul {
+        }
+    
+        nav ul {
         display: flex;
         gap: 1.5rem;
         margin-left: 0rem;
         text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
-    }
-
-    nav ul a.default {
+        }
+    
+        nav ul a.default {
         color: var(--color-segondary);
         text-decoration: underline 2px;
         text-underline-offset: 10px;
-    }
-
-    nav.shrink ul a.default {
+        }
+    
+        nav.shrink ul a.default {
         text-underline-offset: 5px;
-    }
-
-    nav ul a:hover {
+        }
+    
+        nav ul a:hover {
         transition: 0.3s;
         color: var(--color-segondary);
         text-decoration: underline 2px;
         text-underline-offset: 10px;
-    }
-
-    nav.shrink ul a:hover {
+        }
+    
+        nav.shrink ul a:hover {
         text-underline-offset: 2px;
-    }
-
-    .search-bar {
+        }
+    
+        .search-bar {
         width: 30vh;
-        margin-right: 0rem;
+        margin-left: 1rem;
         padding: 7px 10px;
         font-size: 1rem;
         border: 1px solid var(--border-color, #ccc);
@@ -104,20 +127,20 @@ header {
         transition: all 0.1s ease;
         background-color: rgba(190, 190, 190, 0.171);
         color: var(--text-color);
-    }
-
-    nav.shrink .search-bar {
+        }
+    
+        nav.shrink .search-bar {
         opacity: 0;
         visibility: hidden;
         transition: opacity 0.3s ease, visibility 0s 0.7s;
-    }
-
-    .search-bar::placeholder {
+        }
+    
+        .search-bar::placeholder {
         color: var(--placeholder-color, #aaa);
         font-style: italic;
-    }
-
-    .search-icon {
+        }
+    
+        .search-icon {
         position: absolute;
         right: 3rem;
         top: 50%;
@@ -125,30 +148,32 @@ header {
         font-size: 18px;
         color: white;
         pointer-events: none;
-    }
-
-    nav.shrink .search-icon {
+        cursor: pointer;
+        }
+    
+        nav.shrink .search-icon {
         right: 1rem;
-    }
-
-    .search-icon-i {
+        }
+    
+        .search-icon-i {
         position: absolute;
         right: 60rem;
         top: 50%;
         transform: translateY(-50%);
         font-size: 18px;
         color: white;
-    }
-
-    nav.shrink .search-icon-i {
+        }
+    
+        nav.shrink .search-icon-i {
         right: 34rem;
-    }
-}
+        }
 
 .ingredients {
     font-style: italic;
 }
-
+body {
+    background-color: #1D2A35 ;
+}
 h2{
     text-align: center;
 }

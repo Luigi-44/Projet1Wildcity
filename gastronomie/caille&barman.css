@@ -3,9 +3,10 @@
 * {
     font-family: "Montserrat", sans-serif;
     color: #ffffff;
-    background-color: #1D2A35 ;
     margin: 0;
     padding: 0;
+    list-style: none;
+    text-decoration: none;
 }
 
 :root{
@@ -147,6 +148,10 @@ header {
     nav.shrink .search-icon-i {
         right: 34rem;
     }
+}
+
+body{
+    background-color: #1D2A35 ;
 }
 
 h2{

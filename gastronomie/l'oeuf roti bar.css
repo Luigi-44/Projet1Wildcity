@@ -3,7 +3,6 @@
 * {
     font-family: "Montserrat", sans-serif;
     color: #ffffff;
-    background-color: #1D2A35 ;
     margin: 0;
     padding: 0;
     list-style: none;
@@ -174,7 +173,9 @@ nav {
 .ingredients {
     font-style: italic;
 }
-
+body {
+    background-color: #1D2A35 ;
+}
 h2{
     text-align: center;
 }
