@@ -6,7 +6,8 @@ document.addEventListener("DOMContentLoaded", () => {
     function handleResize() {
         if (window.innerWidth < 900) {
             // Affiche tous les éléments (img, h3, p) pour écran < 900px
-            cards.forEach(card => {
+            // biome-ignore lint/complexity/noForEach: <explanation>
+                        cards.forEach(card => {
                 const img = card.querySelector("img");
                 const p = card.querySelector("p");
 
@@ -15,7 +16,8 @@ document.addEventListener("DOMContentLoaded", () => {
             });
         } else {
             // Réinitialise l'état par défaut pour écran >= 900px
-            cards.forEach(card => {
+            // biome-ignore lint/complexity/noForEach: <explanation>
+                        cards.forEach(card => {
                 const img = card.querySelector("img");
                 const p = card.querySelector("p");
 
@@ -35,7 +37,8 @@ document.addEventListener("DOMContentLoaded", () => {
         const sections = document.querySelectorAll("main article section");
     
         // Parcourt chaque section et applique le filtre
-        sections.forEach(section => {
+        // biome-ignore lint/complexity/noForEach: <explanation>
+                    sections.forEach(section => {
             const text = section.textContent.toLowerCase(); // Texte de la section
             section.style.display = text.includes(result) ? '' : 'none'; // Affiche ou masque
         });
@@ -47,7 +50,8 @@ document.addEventListener("DOMContentLoaded", () => {
     window.addEventListener("resize", handleResize);
 
     // Gestion du clic pour les cartes
-    cards.forEach(card => {
+    // biome-ignore lint/complexity/noForEach: <explanation>
+        cards.forEach(card => {
         const img = card.querySelector("img");
         const h3 = card.querySelector("h3");
         const p = card.querySelector("p");
@@ -67,21 +71,21 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         });
     });
-<<<<<<< HEAD
-});
-document.getElementById("close-welcome").addEventListener("click", function () {
-    const overlay = document.getElementById("welcome-overlay");
-    overlay.style.display = "none"; // Cache la page de bienvenue
-  });
-=======
 
+// const menuBurger = document.querySelector(".burger-menu")
+// const navBar = document.querySelector("nav")
+// menuBurger.addEventListener('click',()=>{
+//     navBar.classList.toggle('mobile-menu')
+//     });
+})
     // Sélectionne l'élément du compte à rebours
 const countdown = document.getElementById("countdown");
-const event = document.getElementsByClassName("one")
+const evenement = document.querySelector(".one")
 // Définis la date de l'événement
 const eventDate = new Date("2024-12-25T20:00:00").getTime();
-
+const eventName = "Festival de la Plume d’Or";
 // Met à jour le compte à rebours toutes les secondes
+// biome-ignore lint/complexity/useArrowFunction: <explanation>
 const updateCountdown = setInterval(function() {
   const now = new Date().getTime();  // Temps actuel
   const timeRemaining = eventDate - now;  // Temps restant jusqu'à l'événement
@@ -94,12 +98,17 @@ const updateCountdown = setInterval(function() {
 
   // Affiche le compte à rebours sur la page
   countdown.innerHTML = `${days}j ${hours}h ${minutes}m ${seconds}s`;
-  
-  // Si l'événement est arrivé, affiche un message spécial
+// Si l'événement est arrivé, affiche un message spécial
   if (timeRemaining < 0) {
     clearInterval(updateCountdown);  // Arrête le compte à rebours
     countdown.innerHTML = "L'événement a commencé ! 🎉";
   }
+  countdown.addEventListener("mouseover", () => {
+    evenement.style.transition = "transform 0.3s ease"; // Transition pour l'effet
+    evenement.style.transform = "scale(1.1)"; // Agrandit l'élément
+  });
+  countdown.addEventListener("mouseout", () => {
+    evenement.style.transform = "scale(1)"; // Retour à la taille normale
+  });
+  
 }, 1000);  // Met à jour chaque seconde
-});
->>>>>>> dev
