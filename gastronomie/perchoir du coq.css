@@ -143,7 +143,7 @@ header {
         .search-icon {
         position: absolute;
         right: 3rem;
-        top: 50%;
+        top: 60%;
         transform: translateY(-50%);
         font-size: 18px;
         color: white;
