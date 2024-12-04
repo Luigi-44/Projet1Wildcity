@@ -6,21 +6,22 @@ document.addEventListener("DOMContentLoaded", () => {
     function handleResize() {
         if (window.innerWidth < 900) {
             // Affiche tous les éléments (img, h3, p) pour écran < 900px
-            cards.forEach(card => {
-                const img = card.querySelector("img");
-                const p = card.querySelector("p");
+            // biome-ignore lint/complexity/noForEach: <explanation>
+                        cards.forEach(card => {
+            const img = card.querySelector("img");
+            const p = card.querySelector("p");
 
                 img.style.display = "block"; // Affiche l'image
                 p.style.display = "block";  // Affiche le paragraphe
             });
         } else {
             // Réinitialise l'état par défaut pour écran >= 900px
-            cards.forEach(card => {
+                            cards.forEach(card => {
                 const img = card.querySelector("img");
                 const p = card.querySelector("p");
 
-                img.style.display = "block"; // Affiche l'image
-                p.style.display = "none";   // Cache le paragraphe
+                    img.style.display = "block"; // Affiche l'image
+                    p.style.display = "none";   // Cache le paragraphe
             });
         }
     }
@@ -33,9 +34,9 @@ document.addEventListener("DOMContentLoaded", () => {
     
         // Sélectionne tous les éléments <section> dans les <article>
         const sections = document.querySelectorAll("main article section");
-    
-        // Parcourt chaque section et applique le filtre
-        sections.forEach(section => {
+         // Parcourt chaque section et applique le filtre
+        // biome-ignore lint/complexity/noForEach: <explanation>
+                    sections.forEach(section => {
             const text = section.textContent.toLowerCase(); // Texte de la section
             section.style.display = text.includes(result) ? '' : 'none'; // Affiche ou masque
         });
@@ -68,11 +69,17 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 
-// const menuBurger = document.querySelector(".burger-menu")
-// const navBar = document.querySelector("nav")
-// menuBurger.addEventListener('click',()=>{
-//     navBar.classList.toggle('mobile-menu')
-//     });
+    window.addEventListener("scroll", () => {
+        const nav = document.querySelector("nav");
+        const searchBar = document.querySelector(".search-bar");
+        if (window.scrollY > 20 && window.innerWidth > 900) {
+            nav.classList.add("shrink");
+            nav.style.width = "30%"
+        } else{
+            nav.classList.remove("shrink");
+            nav.style.width = "90%"
+        }
+        });
 })
     // Sélectionne l'élément du compte à rebours
 const countdown = document.getElementById("countdown");
