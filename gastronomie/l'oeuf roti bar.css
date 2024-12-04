@@ -3,12 +3,12 @@
 * {
     font-family: "Montserrat", sans-serif;
     color: #ffffff;
+    
     margin: 0;
     padding: 0;
     list-style: none;
     text-decoration: none;
 }
-
 
 :root{
     --color-article-background: #334A5E;
@@ -18,7 +18,7 @@
 header {
     .test {
         background: linear-gradient(rgba(160, 51, 51, 0), #1d2a35fd),
-            url(/assets/oeuf\ roti\ bar.png);
+            url(/assets/La_voliere_gourmande.png);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
@@ -28,8 +28,8 @@ header {
         position: relative;
         margin-top: 0;
         padding-bottom: 100px;
+        background-color: #1D2A35 ;
     }
-}
 
 nav {
     display: flex;
@@ -52,13 +52,14 @@ nav {
     cursor: pointer;
     }
 
+
     @media (max-width: 768px) {
     nav {
-        width: 25rem;
-        padding: 8px 1rem;
+        width: 60%;
+
         border-radius: 20px;
     }
-
+}
     nav ul {
         gap: 1rem;
     }
@@ -168,21 +169,24 @@ nav {
     nav.shrink .search-icon-i {
     right: 34rem;
     }
-    
 
 .ingredients {
     font-style: italic;
 }
+
+    h2{
+        text-align: center;
+    }
 body {
     background-color: #1D2A35 ;
 }
-h2{
-    text-align: center;
-}
+
 main {
     margin-bottom: 10rem;
 }
+
 article {
+    
     display: flex;
     align-items: left;
     flex-direction: column;
@@ -225,18 +229,19 @@ article {
     }
 }
 
-footer {
-    display: flex;
-    width: 100%;
+footer{
     background-color: #334A5E;
-    align-items: center;
+    width: 100%;
+    height: auto;
+    color: #fff;
+    display: flex;
+    flex-direction:column;
     justify-content: center;
-    flex-direction: column;
-    margin: 1rem 0rem;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 10px 0;
     margin-bottom: 0;
-    padding: 2rem 0rem;
-
-    p {
-        margin: 0rem;
-    }
+    /* margin-top: 1.5rem; */
+    font-family:  "Montserrat", sans-serif;
+    font-size: 0.8rem;
 }

@@ -61,10 +61,11 @@ header {
         cursor: pointer;
     }
 
+
     @media (max-width: 768px) {
     nav {
-        width: 25rem;
-        padding: 8px 1rem;
+        width: 28rem;
+        padding: 0px 1rem;
         border-radius: 20px;
     }
 
@@ -305,18 +306,19 @@ h2 {
     }
 }
 
-footer {
-    display: flex;
-    width: 100%;
+footer{
     background-color: #334A5E;
-    align-items: center;
+    width: 100%;
+    height: auto;
+    color: #fff;
+    display: flex;
+    flex-direction:column;
     justify-content: center;
-    flex-direction: column;
-    margin: 1rem 0rem;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 10px 0;
     margin-bottom: 0;
-    padding: 2rem 0rem;
-
-    p {
-        margin: 0rem;
-    }
+    /* margin-top: 1.5rem; */
+    font-family:  "Montserrat", sans-serif;
+    font-size: 0.8rem;
 }
