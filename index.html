@@ -1,62 +1,59 @@
 <!DOCTYPE html>
 <html lang="fr">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="shortcut icon" href="assets/images/ico/Designer2-removebg-preview.ico" type="image/x-icon" />
-  <link rel="stylesheet" href="styles.css" />
-  <title>WildCity</title>
-</head>
-
-<body>
-  <header>
-    <!-- NavBar Start-->
-    <div class="Background"></div>
-    <nav>
-      <ul>
-        <li><a href="/index.html" class="default">🏠</a></li>
-        <li><a href="/gastronomie/gastronomie.html">Gastronomie</a></li>
-        <li><a href="">Loisirs</a></li>
-        <li><a href="/cultures.html">Cultures</a></li>
-        <li><a href="/news.html">News</a></li>
-      </ul>
-      <div class="search-container">
-        <input type="search" class="search-bar" placeholder="Rechercher..." />
-        <span class="search-icon" onclick="toggleSearchBar()">&#128269;</span>
-      </div>
-    </nav>
-    <!-- NavBar end-->
-
-    <!-- Histoire Start-->
-    <article>
-      <section class="presentation">
-        <img src="./assets/images/logo.png" alt="Wild City" id="logo" />
-        <div class="histoireDescriptif">
-          <h2 class="histoire">Son histoire</h2>
-          <p class="descriptif">
-            Wild City est une métropole dynamique où culture, sport et
-            innovation se mêlent harmonieusement. Entre parcs animés, centres
-            artistiques, marchés locaux et startups florissantes, la ville
-            offre une multitude d’activités pour tous. Son maire, Cluckus
-            Maximus, un poulet charismatique, a révolutionné la ville avec des
-            politiques écologiques et inclusives. Grâce à des infrastructures
-            modernes et un esprit communautaire fort, Wild City est un lieu où
-            il fait bon vivre, travailler et s'amuser.
-          </p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="assets/images/ico/Designer2-removebg-preview.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>WildCity</title>
+  </head>
+  <body>
+    <header>
+      <!-- NavBar Start-->
+      <div class="Background"></div>
+      <nav>
+        <ul>
+          <li><a href="index.html" class="default">🏠</a></li>
+          <li><a href="gastronomie/gastronomie.html">Gastronomie</a></li>
+          <li><a href="loisir.html">Loisirs</a></li>
+          <li><a href="cultures.html">Cultures</a></li>
+          <li><a href="news.html">News</a></li>
+        </ul>
+        <div class="search-container">
+          <input type="search" class="search-bar" placeholder="Rechercher..." />
+          <span class="search-icon">&#128269;</span>
         </div>
-      </section>
-    </article>
-  </header>
+      </nav>
+      <!-- NavBar end-->
 
-  <main>
-
-    <!-- Histoire end-->
+      <!-- Histoire Start-->
+      <article>
+        <section class="presentation">
+          <img src="./assets/images/logo.png" alt="Wild City" id="logo" />
+          <div class="histoireDescriptif">
+            <h2 class="histoire">Son histoire</h2>
+            <p class="descriptif">
+              Wild City est une métropole dynamique où culture, sport et
+              innovation se mêlent harmonieusement. Entre parcs animés, centres
+              artistiques, marchés locaux et startups florissantes, la ville
+              offre une multitude d’activités pour tous. Son maire, Cluckus
+              Maximus, un poulet charismatique, a révolutionné la ville avec des
+              politiques écologiques et inclusives. Grâce à des infrastructures
+              modernes et un esprit communautaire fort, Wild City est un lieu où
+              il fait bon vivre, travailler et s'amuser.
+            </p>
+          </div>
+        </section>
+      </article>
+      <!-- Histoire end-->
     </header>
 
     <main>
       <!-- Top 3 Start-->
-
       <div class="topi">
         <h2>Top 3 à WildCity</h2>
         <div class="top-container">
@@ -64,19 +61,26 @@
           <div class="top-items">
             <div class="top-item">
               <div class="rectangle">
-                <img src="./assets/images/GénéralPoule.png" alt="top1" />
+                <a href="news.html">
+                  <img src="./assets/images/GénéralPoule.png" alt="top1" />
+                </a>
               </div>
               <p>1</p>
             </div>
+
             <div class="top-item">
               <div class="rectangle">
-                <img src="./assets/images/Piscine.jpg" alt="top2" />
+                <a href="loisir.html">
+                  <img src="./assets/images/Piscine.jpg" alt="top2" />
+                </a>
               </div>
               <p>2</p>
             </div>
             <div class="top-item">
               <div class="rectangle">
-                <img src="./assets/images/preview.webp" alt="top3" />
+                <a href="gastronomie/gastronomie.html">
+                  <img src="./assets/images/preview.webp" alt="top3" />
+                </a>
               </div>
               <p>3</p>
             </div>
@@ -87,16 +91,15 @@
       <!-- Top 3 end-->
 
       <!-- Sorties Start-->
-
       <h3 id="sorties">Nos incontournables</h3>
       <div class="jsp">
         <div class="jsp-box">
           <div class="jsp-left">
             <h3>Festival de la Plume d'Or</h3>
             <p>
-              Explorez la ligne d’horizon à couper le souffle de WorldCity, un mélange parfait
-              d’architecture moderne et de beauté naturelle.Pour la 10ᵉ édition du Festival de la Plume d’Or,
-              un concours artistique où les habitants décorent leurs plumes avec des motifs colorés.
+              Pour la 10ᵉ édition du Festival de la Plume d’Or, un concours
+              artistique où les habitants décorent leurs plumes avec des motifs
+              colorés.
             </p>
             <button><a href="">En savoir plus</a></button>
           </div>
@@ -115,17 +118,11 @@
         </div>
         <div class="jsp-box">
           <div class="jsp-left">
-            <h3>Vue sur les toits</h3>
-            <p>
-              Explorez la ligne d’horizon à couper le souffle de WorldCity, un
-              mélange parfait d’architecture moderne et de beauté naturelle.
-
             <h3>Chicken Ball</h3>
             <p>
               Ce sport emblématique à Wild City rassemble les poulets dans des
               compétitions effervescentes où agilité et stratégie sont des clés
               de réussite.
-
             </p>
             <button><a href="">En savoir plus</a></button>
           </div>
@@ -133,32 +130,21 @@
         </div>
         <div class="jsp-box">
           <div class="jsp-left">
-            <h3>Vue sur les toits</h3>
-            <p>
-              Explorez la ligne d’horizon à couper le souffle de WorldCity, un
-              mélange parfait d’architecture moderne et de beauté naturelle.
-
             <h3>Roméo & Coqulettes</h3>
             <p>
               Une version revisitée et hilarante de Roméo et Juliette, où
               Juliette est une poule et Roméo un coq d’une ferme voisine.
-
             </p>
             <button><a href="">En savoir plus</a></button>
           </div>
           <img src="./assets/images/preview.webp" alt="preview" />
         </div>
       </div>
-      <div class="line2">
-      </div>
-      <h3 id="avistitre">Avis</h3>
-
       <!-- Sorties end-->
 
       <div class="line2"></div>
       <h3 id="avistitre">Avis</h3>
       <!-- Avis Start-->
-
       <div class="avis-section">
         <div class="avis-container">
           <div class="avis-item">
@@ -179,45 +165,56 @@
           </div>
           <div class="avis-item">
             <h3>Marc Œuflard</h3>
-            <p>Très amusant ! La chasse aux œufs d’or est une super idée."</p>
-
             <p>
               Très amusant ! La chasse aux œufs d’or est une super idée. Merci
               pour cette expérience unique, je reviendrai !"
             </p>
-
             <div class="stars">★★★★☆</div>
           </div>
           <div class="avis-item">
             <h3>Sophie Cocorette</h3>
             <p>
               Parfait pour les fans de gallinacées. J’ai adoré le safari
-              poulailler </p>
+              poulailler. Une expérience inoubliable!
+            </p>
             <div class="stars">★★★★☆</div>
           </div>
+          <div class="test2">
+            <div class="avis-item">
+              <h3>Pauline Plumette</h3>
+              <p>
+                Une expérience incroyable pour toute la famille. Les enfants ont
+                adoré les ateliers avec les poussins !
+              </p>
+              <div class="stars">★★★★★</div>
+            </div>
+
+            <div class="avis-item">
+              <h3>Marc Gallino</h3>
+              <p>
+                Un moment très agréable au contact des animaux. J’ai
+                particulièrement aimé l’organisation et la gentillesse du
+                personnel.
+              </p>
+              <div class="stars">★★★★☆</div>
+            </div>
+
+            <div class="avis-item">
+              <h3>Julie Piquenette</h3>
+              <p>
+                J’ai beaucoup ri lors de la course de poules ! Une activité
+                originale et bien pensée.
+              </p>
+              <div class="stars">★★★☆☆</div>
+            </div>
+          </div>
         </div>
-
-        poulailler. Une expérience inoubliable!
-        </p>
-        <div class="stars">★★★★☆</div>
-      </div>
-      <div class="avis-item">
-        <h3>Sophie Cocorette</h3>
-        <p>
-          Perfect for gallinaceous fans. I loved the safari Chicken coop. An
-          unforgettable experience!
-        </p>
-        <div class="stars">★★★★</div>
-      </div>
-      </div>
-      <!-- Avis end-->
-
+        <!-- Avis end-->
       </div>
     </main>
 
     <footer>
       <!-- Contact Start-->
-
       <div class="contact">
         <h2>
           Contactez<br />
@@ -227,63 +224,56 @@
 
       <form id="formulaire">
         <div class="form-item">
-          <label for="prenom">Prénom</label>
+          <label for="prenom">Prénom:</label>
           <input type="text" id="prenom" placeholder="Votre prénom" />
         </div>
         <div class="form-item">
-          <label for="nom">Nom</label>
+          <label for="nom">Nom:</label>
           <input type="text" id="nom" placeholder="Votre nom" />
         </div>
         <div class="form-item">
-          <label for="email">Mail</label>
+          <label for="email">Mail:</label>
           <input type="email" id="email" placeholder="Votre email" />
         </div>
         <div class="form-item">
-          <label for="message">Votre message</label>
+          <label for="message">Votre message:</label>
           <textarea id="message" placeholder="Votre message"> </textarea>
         </div>
 
         <button id="btn" type="submit">Envoyer</button>
       </form>
-    </footer>
+      <!-- Contact end-->
+      <div class="footer-container">
+        <!-- Section 1 : Informations générales -->
+        <div class="footer-info">
+          <img
+            src="assets/images/ico/Designer2-removebg-preview.ico"
+            alt="Logo Wild City"
+            class="footer-logo"
+          />
+          <p>Wild City, la ville où les poules dansent et chantent ! 🐔✨</p>
+        </div>
 
-
-    <!-- Contact end-->
+        <!-- Section 4 : Mentions légales -->
+        <div class="footer-legal">
+          <p>&copy; 2024 Wild City. Tous droits réservés.</p>
+          <a href="#">Mentions légales</a> | <a href="#">CGU</a>
+        </div>
+      </div>
     </footer>
 
     <!-- Bienvenue Start-->
-
     <div id="welcome-overlay" class="welcome-overlay">
       <div class="welcome-content">
         <h2>Bienvenue à WildCity !</h2>
         <p>Découvrez un monde unique dédié aux passionnés de gallinacées.</p>
+        <img class="gif1" src="assets/poule-pond-oeuf.gif" alt="" />
+        <img class="gif2" src="assets/poule-pond-oeuf.gif" alt="" />
         <button id="close-welcome">Entrer</button>
       </div>
     </div>
-    <script>
-      window.addEventListener("scroll", () => {
-        const nav = document.querySelector("nav");
-        const searchBar = document.querySelector(".search-bar");
-        if (window.scrollY > 20) {
-          // 20px correspond à environ 2 cm
-          nav.classList.add("shrink");
-        } else {
-          nav.classList.remove("shrink");
-        }
-      });
-
-      document
-        .getElementById("close-welcome")
-        .addEventListener("click", function () {
-          const overlay = document.getElementById("welcome-overlay");
-          overlay.style.display = "none"; // Cache la page de bienvenue
-        });
-    </script>
-
     <!-- Bienvenue end-->
 
     <script src="Accueill.js"></script>
-
-</body>
-
+  </body>
 </html>
