@@ -5,23 +5,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="news.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Georgian:wght@100..900&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet"
-        href="@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');">
-
     <title>Page|News</title>
 </head>
 
 <body>
     <header>
-        <img src="./Img/Journal WildC.png" alt="Image d'accueil">
+        <img src="./Img/Newspaper.png" alt="Image d'accueil">
+        <div class="navigation">
+            <nav>
+                <p><a href="index.html"></a></p>
+                <ul>
+                    <li><a href="./index.html" class="default">🏠</a></li>
+                    <li><a href="Gastronomie.html">Gastronomie</a></li>
+                    <li><a href="Loisirs.html">Loisirs</a></li>
+                    <li><a href="./cultures.html">Cultures</a></li>
+                    <li><a href="./news.html">News</a></li>
+                    <!-- <li><a href="" class="search-icon-i">🏠</a></li> -->
+                </ul>
+                <div class="search-container">
+                    <input type="search" class="search-bar" placeholder="Rechercher..." />
+                    <span class="search-icon">&#128269;</span>
+                </div>
 
     </header>
     <main>
+
+
         <h2>News</h2>
+
         <section class="conteneur">
             <article>
                 <img class="modèle" src="./Img/Carnaval poulette.png " alt="Image Parade">
@@ -32,6 +43,9 @@
                         et quelques grattes-ciel ébahis ! Les habitantes ont défilé
                         en robe plumes et en escarpins en grains de maïs.
                     </p>
+                    <a href="grand-article.html" style="color:darkgoldenrod" target="_blank">Lire l'article
+                        complet</a>
+
                 </div>
             </article>
         </section>
@@ -49,6 +63,8 @@
                         des œufs en chocolat.Le poulet, fier de son succès, promet d'
                         augmenter le budget de la foire annuelle.
                     </p>
+                    <a href="big-article.html" style="color:darkgoldenrod" class="read-again">Lire l'article
+                        complet</a>
                 </div>
             </article>
 
@@ -72,7 +88,7 @@
         </section>
         <!-- <section class="bigconteneur"> -->
         <section class="conteneur4">
-            <article>
+            <article class="chantier">
                 <img class="modèle" src="./Img/poulet chantier (2).png" alt="image travaux">
                 <div class="TP4">
 
@@ -87,9 +103,9 @@
                     </p>
                 </div>
             </article>
-            <article>
+            <article class="Poulet">
                 <img class="modèle" src="./Img/Policier poulet.webp" alt="image policier">
-                <div class="TP5">
+                <div class="TP4">
 
                     <h3> Au Revoir Poulet: </h3>
 
@@ -102,14 +118,16 @@
                 </div>
             </article>
         </section>
-        <!-- <section class="conteneur5">
-                
-            </section>
-        </section> -->
-
     </main>
-    <footer></footer>
 
+    <footer>
+        <p>Wild City, la ville où les poules dansent et chantent ! 🐔✨</p>
+
+        <p>&copy; 2024 Wild City. Tous droits réservés.
+            <a href="#">Mentions légales</a> | <a href="#">CGU</a>
+        </p>
+    </footer>
+    <script src="news.js"></script>
 </body>
 
 </html>

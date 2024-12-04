@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Georgian:wght@100..900&display=swap');
+
+:root {
+    --couleur1: #1D2A35;
+    --couleur2: #334A5E;
+    --couleur3: #DADADA;
+    --typoPrincipal: 'Montserrat', sans-serif;
+    --typoSecondaire: 'Inter', sans-serif;
+    --color-segondary: #FF6347; /* Exemple de couleur secondaire (tomato) */
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: var(--typoPrincipal);
+}
+
+body {
+    background-color: var(--couleur1);
+    color: var(--couleur3);
+    height: 100vh;
+    width: 100%;
+}
+header {
+
+    background: linear-gradient(rgba(228, 123, 123, 0.283), #1d2a35fd),
+        url(./Img/Carnaval\ poulette.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+    /* background-attachment: fixed; /
+    / overflow: hidden;  */
+
+    max-width: 100%;
+    height: 45vh;
+    margin-top: 0;
+    padding-bottom: 100px;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+header img {
+    width: 100%;
+    filter: grayscale(60%);
+    filter: opacity(50%);
+}
+article{
+    margin: 1rem 1.5rem  ;
+
+        h1{
+            margin-bottom: 1.5rem;
+            padding: 0;
+        }
+        .content{
+
+            div {
+                display: flex; 
+                gap: 1rem;
+                margin: 0 3rem 1rem 0;
+                /* TODO: media queries pour mobile flex wrap */
+
+                img{
+                    width: 250px;
+                    height:auto;
+                    max-height: 500px;
+                    
+            
+                }
+
+                p {
+           
+                display: -webkit-box; 
+                -webkit-line-clamp: 2; /* Nombre de lignes */ 
+                -webkit-box-orient: vertical; 
+                overflow:hidden; 
+                text-overflow: ellipsis; 
+                
+                
+            }
+            }
+            
+        }
+}
+footer{
+    background-color: #334A5E;
+    width: 100%;
+    height: auto;
+    color: #fff;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 10px 0;
+    margin-bottom: 0;
+    /* margin-top: 1.5rem; */
+    font-family:  "Montserrat", sans-serif;
+    font-size: 0.8rem;
+}
