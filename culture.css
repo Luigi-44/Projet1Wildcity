@@ -208,6 +208,7 @@ main {
     width: 80%;
     margin: 0 auto;
     gap: 1rem;
+    margin-bottom: 5rem;
     /* z-index: 1; */
 
 
@@ -410,16 +411,20 @@ h2 {
 }
 
 footer{
-    background-color: var(--bgc-block);
+    background-color: #334A5E;
     width: 100%;
     height: auto;
     color: #fff;
-    .footer-container{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-    }
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 10px 0;
+    margin-bottom: 0;
+    /* margin-top: 1.5rem; */
+    font-family:  "Montserrat", sans-serif;
+    font-size: 0.8rem;
 }
 
 /* responsive */

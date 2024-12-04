@@ -69,11 +69,15 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 
-// const menuBurger = document.querySelector(".burger-menu")
-// const navBar = document.querySelector("nav")
-// menuBurger.addEventListener('click',()=>{
-//     navBar.classList.toggle('mobile-menu')
-//     });
+    window.addEventListener("scroll", () => {
+        const nav = document.querySelector("nav");
+        const searchBar = document.querySelector(".search-bar");
+        if (window.scrollY > 20) {
+            nav.classList.add("shrink");
+        } else {
+            nav.classList.remove("shrink");
+        }
+        });
 })
     // Sélectionne l'élément du compte à rebours
 const countdown = document.getElementById("countdown");
