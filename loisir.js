@@ -49,6 +49,7 @@ prevButton.addEventListener('click', () => {
 });
 
 // Ajouter un événement de clic à chaque article du carrousel
+// biome-ignore lint/complexity/noForEach: <explanation>
 items.forEach(item => {
     item.addEventListener('click', () => {
         showFeaturedArticle(item);  // Afficher l'article cliqué dans la section mis en avant
