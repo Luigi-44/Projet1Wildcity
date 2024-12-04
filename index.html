@@ -1,34 +1,5 @@
 <!DOCTYPE html>
 <html lang="fr">
-<<<<<<< HEAD
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="shortcut icon"
-      href="assets/images/ico/Designer2-removebg-preview.ico"
-      type="image/x-icon"
-    />
-    <link rel="stylesheet" href="styles.css" />
-    <title>WildCity</title>
-  </head>
-  <body>
-    <header>
-      <div class="test"></div>
-      <nav>
-        <p><a href="index.html"></a></p>
-        <ul>
-          <li><a href="index.html" class="default">🏠</a></li>
-          <li><a href="gastronomie.html">Gastronomie</a></li>
-          <li><a href="loisirs.html">Loisirs</a></li>
-          <li><a href="cultures.html">Cultures</a></li>
-          <li><a href="news.html">News</a></li>
-          <!-- <li><a href="" class="search-icon-i">🏠</a></li> -->
-        </ul>
-        <div class="search-container">
-          <input type="search" class="search-bar" placeholder="Rechercher..." />
-          <span class="search-icon">&#128269;</span>
-=======
 
 <head>
   <meta charset="UTF-8" />
@@ -40,23 +11,24 @@
 
 <body>
   <header>
-    <div class="test"></div>
+    <!-- NavBar Start-->
+    <div class="Background"></div>
     <nav>
-      <p><a href="index.html"></a></p>
       <ul>
-        <li><a href="index.html" class="default">🏠</a></li>
-        <li><a href="gastronomie/gastronomie.html">Gastronomie</a></li>
+        <li><a href="/index.html" class="default">🏠</a></li>
+        <li><a href="/gastronomie/gastronomie.html">Gastronomie</a></li>
         <li><a href="">Loisirs</a></li>
-        <li><a href="cultures.html">Cultures</a></li>
-        <li><a href="news.html">News</a></li>
-        <!-- <li><a href="" class="search-icon-i">🏠</a></li> -->
+        <li><a href="/cultures.html">Cultures</a></li>
+        <li><a href="/news.html">News</a></li>
       </ul>
       <div class="search-container">
         <input type="search" class="search-bar" placeholder="Rechercher..." />
-        <span class="search-icon">&#128269;</span>
+        <span class="search-icon" onclick="toggleSearchBar()">&#128269;</span>
       </div>
     </nav>
+    <!-- NavBar end-->
 
+    <!-- Histoire Start-->
     <article>
       <section class="presentation">
         <img src="./assets/images/logo.png" alt="Wild City" id="logo" />
@@ -72,183 +44,246 @@
             modernes et un esprit communautaire fort, Wild City est un lieu où
             il fait bon vivre, travailler et s'amuser.
           </p>
->>>>>>> dev
         </div>
       </section>
     </article>
   </header>
 
   <main>
-    <div class="topi">
-      <h2>Top 3 à WildCity</h2>
-      <div class="top-container">
-        <button class="arrow left-arrow">&#8592;</button>
-        <div class="top-items">
-          <div class="top-item">
-            <div class="rectangle">
-              <img src="./assets/images/GénéralPoule.png" alt="top1" />
+
+    <!-- Histoire end-->
+    </header>
+
+    <main>
+      <!-- Top 3 Start-->
+
+      <div class="topi">
+        <h2>Top 3 à WildCity</h2>
+        <div class="top-container">
+          <button class="arrow left-arrow">&#8592;</button>
+          <div class="top-items">
+            <div class="top-item">
+              <div class="rectangle">
+                <img src="./assets/images/GénéralPoule.png" alt="top1" />
+              </div>
+              <p>1</p>
             </div>
-            <p>1</p>
-          </div>
-          <div class="top-item">
-            <div class="rectangle">
-              <img src="./assets/images/Piscine.jpg" alt="top2" />
+            <div class="top-item">
+              <div class="rectangle">
+                <img src="./assets/images/Piscine.jpg" alt="top2" />
+              </div>
+              <p>2</p>
             </div>
-            <p>2</p>
-          </div>
-          <div class="top-item">
-            <div class="rectangle">
-              <img src="./assets/images/preview.webp" alt="top3" />
+            <div class="top-item">
+              <div class="rectangle">
+                <img src="./assets/images/preview.webp" alt="top3" />
+              </div>
+              <p>3</p>
             </div>
-            <p>3</p>
+          </div>
+          <button class="arrow right-arrow">&#8594;</button>
+        </div>
+      </div>
+      <!-- Top 3 end-->
+
+      <!-- Sorties Start-->
+
+      <h3 id="sorties">Nos incontournables</h3>
+      <div class="jsp">
+        <div class="jsp-box">
+          <div class="jsp-left">
+            <h3>Festival de la Plume d'Or</h3>
+            <p>
+              Explorez la ligne d’horizon à couper le souffle de WorldCity, un mélange parfait
+              d’architecture moderne et de beauté naturelle.Pour la 10ᵉ édition du Festival de la Plume d’Or,
+              un concours artistique où les habitants décorent leurs plumes avec des motifs colorés.
+            </p>
+            <button><a href="">En savoir plus</a></button>
+          </div>
+          <img src="./assets/images/preview.webp" alt="preview" />
+        </div>
+        <div class="jsp-box">
+          <div class="jsp-left">
+            <h3>La Volière Gourmande</h3>
+            <p>
+              Un lieu où chaque plat est une envolée de saveurs, inspirée par
+              nos amis à plumes.
+            </p>
+            <button><a href="">En savoir plus</a></button>
+          </div>
+          <img src="./assets/images/preview.webp" alt="preview" />
+        </div>
+        <div class="jsp-box">
+          <div class="jsp-left">
+            <h3>Vue sur les toits</h3>
+            <p>
+              Explorez la ligne d’horizon à couper le souffle de WorldCity, un
+              mélange parfait d’architecture moderne et de beauté naturelle.
+
+            <h3>Chicken Ball</h3>
+            <p>
+              Ce sport emblématique à Wild City rassemble les poulets dans des
+              compétitions effervescentes où agilité et stratégie sont des clés
+              de réussite.
+
+            </p>
+            <button><a href="">En savoir plus</a></button>
+          </div>
+          <img src="./assets/images/preview.webp" alt="preview" />
+        </div>
+        <div class="jsp-box">
+          <div class="jsp-left">
+            <h3>Vue sur les toits</h3>
+            <p>
+              Explorez la ligne d’horizon à couper le souffle de WorldCity, un
+              mélange parfait d’architecture moderne et de beauté naturelle.
+
+            <h3>Roméo & Coqulettes</h3>
+            <p>
+              Une version revisitée et hilarante de Roméo et Juliette, où
+              Juliette est une poule et Roméo un coq d’une ferme voisine.
+
+            </p>
+            <button><a href="">En savoir plus</a></button>
+          </div>
+          <img src="./assets/images/preview.webp" alt="preview" />
+        </div>
+      </div>
+      <div class="line2">
+      </div>
+      <h3 id="avistitre">Avis</h3>
+
+      <!-- Sorties end-->
+
+      <div class="line2"></div>
+      <h3 id="avistitre">Avis</h3>
+      <!-- Avis Start-->
+
+      <div class="avis-section">
+        <div class="avis-container">
+          <div class="avis-item">
+            <h3>Clara Plumeau</h3>
+            <p>
+              Incroyable ! Les poules sont adorables et les activités
+              originales. Une expérience unique !
+            </p>
+            <div class="stars">★★★★☆</div>
+          </div>
+          <div class="avis-item">
+            <h3>Henrietta, l'artiste</h3>
+            <p>
+              WorldCity est une incroyable, où chaque jour est une fête de
+              couleurs et de créativité !
+            </p>
+            <div class="stars">★★★★☆</div>
+          </div>
+          <div class="avis-item">
+            <h3>Marc Œuflard</h3>
+            <p>Très amusant ! La chasse aux œufs d’or est une super idée."</p>
+
+            <p>
+              Très amusant ! La chasse aux œufs d’or est une super idée. Merci
+              pour cette expérience unique, je reviendrai !"
+            </p>
+
+            <div class="stars">★★★★☆</div>
+          </div>
+          <div class="avis-item">
+            <h3>Sophie Cocorette</h3>
+            <p>
+              Parfait pour les fans de gallinacées. J’ai adoré le safari
+              poulailler </p>
+            <div class="stars">★★★★☆</div>
           </div>
         </div>
-        <button class="arrow right-arrow">&#8594;</button>
+
+        poulailler. Une expérience inoubliable!
+        </p>
+        <div class="stars">★★★★☆</div>
+      </div>
+      <div class="avis-item">
+        <h3>Sophie Cocorette</h3>
+        <p>
+          Perfect for gallinaceous fans. I loved the safari Chicken coop. An
+          unforgettable experience!
+        </p>
+        <div class="stars">★★★★</div>
+      </div>
+      </div>
+      <!-- Avis end-->
+
+      </div>
+    </main>
+
+    <footer>
+      <!-- Contact Start-->
+
+      <div class="contact">
+        <h2>
+          Contactez<br />
+          Nous !<br />
+        </h2>
+      </div>
+
+      <form id="formulaire">
+        <div class="form-item">
+          <label for="prenom">Prénom</label>
+          <input type="text" id="prenom" placeholder="Votre prénom" />
+        </div>
+        <div class="form-item">
+          <label for="nom">Nom</label>
+          <input type="text" id="nom" placeholder="Votre nom" />
+        </div>
+        <div class="form-item">
+          <label for="email">Mail</label>
+          <input type="email" id="email" placeholder="Votre email" />
+        </div>
+        <div class="form-item">
+          <label for="message">Votre message</label>
+          <textarea id="message" placeholder="Votre message"> </textarea>
+        </div>
+
+        <button id="btn" type="submit">Envoyer</button>
+      </form>
+    </footer>
+
+
+    <!-- Contact end-->
+    </footer>
+
+    <!-- Bienvenue Start-->
+
+    <div id="welcome-overlay" class="welcome-overlay">
+      <div class="welcome-content">
+        <h2>Bienvenue à WildCity !</h2>
+        <p>Découvrez un monde unique dédié aux passionnés de gallinacées.</p>
+        <button id="close-welcome">Entrer</button>
       </div>
     </div>
-
-    <h3 id="sorties">Nos incontournables</h3>
-    <div class="jsp">
-      <div class="jsp-box">
-        <div class="jsp-left">
-          <h3>Festival de la Plume d'Or</h3>
-          <p>
-            Explorez la ligne d’horizon à couper le souffle de WorldCity, un
-            mélange parfait d’architecture moderne et de beauté naturelle.
-          </p>
-          <button><a href="">En savoir plus</a></button>
-        </div>
-        <img src="./assets/images/preview.webp" alt="preview" />
-      </div>
-      <div class="jsp-box">
-        <div class="jsp-left">
-          <h3>La Volière Gourmande</h3>
-          <p>
-            Un lieu où chaque plat est une envolée de saveurs, inspirée par
-            nos amis à plumes.
-          </p>
-          <button><a href="">En savoir plus</a></button>
-        </div>
-        <img src="./assets/images/preview.webp" alt="preview" />
-      </div>
-      <div class="jsp-box">
-        <div class="jsp-left">
-          <h3>Vue sur les toits</h3>
-          <p>
-            Explorez la ligne d’horizon à couper le souffle de WorldCity, un
-            mélange parfait d’architecture moderne et de beauté naturelle.
-          </p>
-          <button><a href="">En savoir plus</a></button>
-        </div>
-        <img src="./assets/images/preview.webp" alt="preview" />
-      </div>
-      <div class="jsp-box">
-        <div class="jsp-left">
-          <h3>Vue sur les toits</h3>
-          <p>
-            Explorez la ligne d’horizon à couper le souffle de WorldCity, un
-            mélange parfait d’architecture moderne et de beauté naturelle.
-          </p>
-          <button><a href="">En savoir plus</a></button>
-        </div>
-        <img src="./assets/images/preview.webp" alt="preview" />
-      </div>
-    </div>
-
-    <div class="line2"></div>
-    <h3 id="avistitre">Avis</h3>
-    <div class="avis-section">
-      <div class="avis-container">
-        <div class="avis-item">
-          <h3>Clara Plumeau</h3>
-          <p>
-            Incroyable ! Les poules sont adorables et les activités
-            originales. Une expérience unique !
-          </p>
-          <div class="stars">★★★★☆</div>
-        </div>
-        <div class="avis-item">
-          <h3>Henrietta, l'artiste</h3>
-          <p>
-            WorldCity est une incroyable, où chaque jour est une fête de
-            couleurs et de créativité !
-          </p>
-          <div class="stars">★★★★☆</div>
-        </div>
-        <div class="avis-item">
-          <h3>Marc Œuflard</h3>
-          <p>Très amusant ! La chasse aux œufs d’or est une super idée."</p>
-          <div class="stars">★★★★☆</div>
-        </div>
-        <div class="avis-item">
-          <h3>Sophie Cocorette</h3>
-          <p>
-            Parfait pour les fans de gallinacées. J’ai adoré le safari
-            poulailler
-          </p>
-          <div class="stars">★★★★☆</div>
-        </div>
-      </div>
-    </div>
-  </main>
-
-  <footer>
-    <div class="contact">
-      <h2>
-        Contactez<br />
-        Nous !<br />
-      </h2>
-    </div>
-
-    <form id="formulaire">
-      <div class="form-item">
-        <label for="prenom">Prénom</label>
-        <input type="text" id="prenom" placeholder="Votre prénom" />
-      </div>
-      <div class="form-item">
-        <label for="nom">Nom</label>
-        <input type="text" id="nom" placeholder="Votre nom" />
-      </div>
-      <div class="form-item">
-        <label for="email">Mail</label>
-        <input type="email" id="email" placeholder="Votre email" />
-      </div>
-      <div class="form-item">
-        <label for="message">Votre message</label>
-        <textarea id="message" placeholder="Votre message"> </textarea>
-      </div>
-
-      <button id="btn" type="submit">Envoyer</button>
-    </form>
-  </footer>
-
-  <div id="welcome-overlay" class="welcome-overlay">
-    <div class="welcome-content">
-      <h2>Bienvenue à WildCity !</h2>
-      <p>Découvrez un monde unique dédié aux passionnés de gallinacées.</p>
-      <button id="close-welcome">Entrer</button>
-    </div>
-  </div>
-
-  <script>
-    window.addEventListener("scroll", () => {
-      const nav = document.querySelector("nav");
-      const searchBar = document.querySelector(".search-bar");
-      if (window.scrollY > 20) {
-        // 20px correspond à environ 2 cm
-        nav.classList.add("shrink");
-      } else {
-        nav.classList.remove("shrink");
-      }
-    });
-
-    document
-      .getElementById("close-welcome")
-      .addEventListener("click", function () {
-        const overlay = document.getElementById("welcome-overlay");
-        overlay.style.display = "none"; // Cache la page de bienvenue
+    <script>
+      window.addEventListener("scroll", () => {
+        const nav = document.querySelector("nav");
+        const searchBar = document.querySelector(".search-bar");
+        if (window.scrollY > 20) {
+          // 20px correspond à environ 2 cm
+          nav.classList.add("shrink");
+        } else {
+          nav.classList.remove("shrink");
+        }
       });
-  </script>
+
+      document
+        .getElementById("close-welcome")
+        .addEventListener("click", function () {
+          const overlay = document.getElementById("welcome-overlay");
+          overlay.style.display = "none"; // Cache la page de bienvenue
+        });
+    </script>
+
+    <!-- Bienvenue end-->
+
+    <script src="Accueill.js"></script>
+
 </body>
 
 </html>

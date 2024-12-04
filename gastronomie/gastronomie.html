@@ -9,27 +9,23 @@
 </head>
 
 <body>
+    <header>
+        <div class="test"></div>
+        <nav>
+            <ul>
+                <li><a href="/index.html" class="default">🏠</a></li>
+                <li><a href="/gastronomie/gastronomie.html">Gastronomie</a></li>
+                <li><a href="loisirs.html">Loisirs</a></li>
+                <li><a href="/cultures.html">Cultures</a></li>
+                <li><a href="/news.html">News</a></li>
+            </ul>
+            <div class="search-container">
+                <input type="search" class="search-bar" placeholder="Rechercher..." />
+                <span class="search-icon" onclick="toggleSearchBar()">&#128269;</span>
+            </div>
+        </nav>
+    </header>
     <main>
-
-        <header>
-            <div class="test"></div>
-            <nav>
-                <p><a href="index.html"></a></p>
-                <ul>
-                    <li><a href="index.html" class="default">🏠</a></li>
-                    <li><a href="gastronomie.html">Gastronomie</a></li>
-                    <li><a href="">Loisirs</a></li>
-                    <li><a href="cultures.html">Cultures</a></li>
-                    <li><a href="news.html">News</a></li>
-                    <!-- <li><a href="" class="search-icon-i">🏠</a></li> -->
-                </ul>
-                <div class="search-container">
-                    <input type="search" class="search-bar" placeholder="Rechercher..." />
-                    <span class="search-icon">&#128269;</span>
-                </div>
-            </nav>
-        </header>
-
         <h1>Gastronomie</h1>
         <h2>Restaurants:</h2>
         <section class="restaurants">
@@ -38,13 +34,13 @@
                     <img class="img_restaurant" src="/assets/La_voliere_gourmande.png" alt="la La_voliere_gourmande">
                     <div class="div8">
                         <h3>La Volière Gourmande</h3>
-                        <p>Ici, les poules servent un festin royal sous l’œil attentif du fier coq.</p>
+                        <p>Un lieu où chaque plat est une envolée de saveurs, inspirée par nos amis à plumes.</p>
                         <p> Spécialité:</p>
                         <p>Poulet Rôti à l’ herbe de Provence:</p>
                         <p>Un poulet parfaitement rôti, tendre et parfumé, accompagné d'un mélange d'herbes fraîches et
                             d'une sauce maison.Un lieu où chaque plat est une envolée de
                             saveurs, inspirée par nos amis à plumes.</p>
-                        <a href="./perchoir du coq.html">
+                        <a href="./la voliere gourmande.html">
                             <button>En savoir plus</button>
                         </a>
                     </div>
@@ -57,12 +53,12 @@
                         alt="vue du restaurant le coq & la table">
                     <div class="div2">
                         <h3>Le Coq & la Table</h3>
-                        <a href="./l'oeuf roti bar.html">
+                        <a href="./le coq & la table.html">
                             <button>En savoir plus</button>
                         </a>
                         <p>Ici, les poules servent un festin royal sous l’œil attentif du fier coq.</p>
                         <p> Spécialité:</p>
-                        <p>Coq au VinUn coq</p>
+                        <p>Coq au Vin:</p>
                         <p>mijoté lentement dans un vin rouge savoureux, accompagné de
                             champignons, de
                             lardons et d'une purée maison onctueuse.Ici, les poules servent un festin royal sous
@@ -76,7 +72,7 @@
                         alt="vue du restaurant: les poules en fete">
                     <div class="div5">
                         <h3>Les Poules en Fete</h3>
-                        <a href="./perchoir du coq.html">
+                        <a href="./les poules en fete.html">
                             <button>En savoir plus</button>
                         </a>
                         <p>Un restaurant où l’ambiance est festive et les poules chantent pour un repas savoureux.</p>
@@ -92,7 +88,7 @@
                         alt="vue du restaurant: la La_voliere_gourmande">
                     <div class="div5">
                         <h3>La Volière Gourmande</h3>
-                        <a href="./perchoir du coq.html">
+                        <a href="./la voliere gourmande.html">
                             <button>En savoir plus</button>
                         </a>
                         <p>Un lieu où chaque plat est une envolée de saveurs, inspirée par nos amis à plumes.</p>
@@ -108,7 +104,7 @@
         <h2> Bars:</h2>
         <section class="bars">
             <div class="div6">
-                <article class="mise_en_avant">
+                <article class="mise_en_avant2">
                     <img class="img_bar" src="/assets/le perchoir du coq.png" alt="vue du bar: le perchoir du coq">
                     <div class="div1">
                         <h3>Le Perchoir du Coq</h3>
@@ -127,7 +123,7 @@
 
             <div class="div4">
                 <article class="roti">
-                    <img class="img_bar2" src="/assets/l'oeuf roti bar.png" alt="vue du bar l'oeuf roti">
+                    <img class="img_bar2" src="/assets/oeuf roti bar.png" alt="vue du bar l'oeuf roti">
                     <div class="div2">
                         <h3>L'Œuf Roti Bar</h3>
                         <a href="./l'oeuf roti bar.html">
@@ -178,7 +174,16 @@
             </div>
 
         </section>
+        <script src="gastronomie.js" defer></script>
     </main>
+    <footer>
+        <p>Wild City, la ville où les poules dansent et chantent ! 🐔✨</p>
+
+        <p>&copy; 2024 Wild City. Tous droits réservés.
+            <a href="#">Mentions légales</a> | <a href="#">CGU</a>
+        </p>
+
+    </footer>
 </body>
 
 </html>
