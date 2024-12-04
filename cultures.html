@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,19 +8,21 @@
     <link rel="stylesheet" href="culture.css">
     <title>page-cultures</title>
 </head>
+
 <body>
     <header>
         <div class="test"></div>
         <div class="navigation">
+            <!-- <img src="./images/menu.png" alt="menu burger" class="burger-menu"> -->
             <nav>
                 <p><a href="index.html"></a></p>
                 <ul>
                     <li><a href="index.html" class="default">🏠</a></li>
-                    <li><a href="Gastronomie.html">Gastronomie</a></li>
-                    <li><a href="Loisirs.html">Loisirs</a></li>
-                    <li><a href="./cultures.html">Cultures</a></li>
-                    <li><a href="./news.html">News</a></li>
-                        <!-- <li><a href="" class="search-icon-i">🏠</a></li> -->
+                    <li><a href="/gastronomie/gastronomie.html">Gastronomie</a></li>
+                    <li><a href="">Loisirs</a></li>
+                    <li><a href="/cultures.html">Cultures</a></li>
+                    <li><a href="/news.html">News</a></li>
+                    <!-- <li><a href="" class="search-icon-i">🏠</a></li> -->
                 </ul>
                 <div class="search-container">
                     <input type="search" class="search-bar" placeholder="Rechercher..." />
@@ -35,45 +38,54 @@
             <p>Il reste :</p>
             <div id="countdown"></div>
         </div>
-    </header>   
+    </header>
     <main>
         <!-- frist section cinema -->
         <article>
             <div class="title1">
                 <h2>Cinéma</h2>
             </div>
-                <section class="one">
-                    <img src="./images/plume.d'or.webp" alt="poulet en fete" class="image">
-                    <div>
-                        <h3>Festival de la Plume d’Or</h3>
-                        <p>
+            <section class="one">
+                <img src="./images/plume.d'or.webp" alt="poulet en fete" class="image">
+                <div>
+                    <h3>Festival de la Plume d’Or</h3>
+                    <p>
 
-                            Date : 15 décembre 2024 <br>
-                            Lieu : Place des Cocoricos <br>
-                            Description :
-                            La ville se prépare pour la 10ᵉ édition du Festival de la Plume d’Or, un concours artistique où les habitants décorent leurs plumes avec des motifs colorés. Cette année, le thème est “Plume et Popcorn”.<br>
-                            Blague associée : “Pourquoi les poulets peignent-ils leurs plumes ? Parce que c’est plus chic que de changer de veste !”
-                            Image : Des poulets colorés sur une scène avec des juges en costume.
-                        </p>
-                    </div>
-                </section>
+                        Date : 15 décembre 2024 <br>
+                        Lieu : Place des Cocoricos <br>
+                        Description :
+                        La ville se prépare pour la 10ᵉ édition du Festival de la Plume d’Or, un concours artistique où
+                        les habitants décorent leurs plumes avec des motifs colorés. Cette année, le thème est “Plume et
+                        Popcorn”.<br>
+                        Blague associée : “Pourquoi les poulets peignent-ils leurs plumes ? Parce que c’est plus chic
+                        que de changer de veste !”
+                        Image : Des poulets colorés sur une scène avec des juges en costume.
+                    </p>
+                </div>
+            </section>
         </article>
         <article>
-            <section class="one-x" >
+            <section class="one-x">
                 <div>
                     <img src="./images/expo.webp" alt="salle de theatre">
                     <h3>Le Wild Film Fest</h3>
-                    <p>Chaque printemps, Wild City vibre au rythme du Wild Film Fest, un festival où les talents locaux sont à l’honneur. Ce festival en plein air, qui se déroule dans le Parc du Grand Œuf, attire des centaines de spectateurs chaque année. </p>
+                    <p>Chaque printemps, Wild City vibre au rythme du Wild Film Fest, un festival où les talents locaux
+                        sont à l’honneur. Ce festival en plein air, qui se déroule dans le Parc du Grand Œuf, attire des
+                        centaines de spectateurs chaque année. </p>
                 </div>
                 <div>
                     <img src="./images/etoile.webp" alt="salle de theatre">
                     <h3>Le Cinéma des Coqs</h3>
-                    <p>Le Cinéma des Coqs, un lieu incontournable de Wild City, est un véritable trésor du passé. Inauguré dans les années 60 par le visionnaire Alfred Beaktail, ce cinéma vintage est une véritable capsule temporelle. </p>
+                    <p>Le Cinéma des Coqs, un lieu incontournable de Wild City, est un véritable trésor du passé.
+                        Inauguré dans les années 60 par le visionnaire Alfred Beaktail, ce cinéma vintage est une
+                        véritable capsule temporelle. </p>
                 </div>
                 <div>
                     <img src="./images/plume.d'or.webp" alt="salle de theatre">
                     <h3>La Cinémathèque </h3>
-                    <p>Située au cœur de Wild City, la Cinémathèque est un lieu où l’histoire du cinéma local est préservée avec soin. C’est ici que sont restaurées les premières bobines de films réalisés dans la ville. </p>
+                    <p>Située au cœur de Wild City, la Cinémathèque est un lieu où l’histoire du cinéma local est
+                        préservée avec soin. C’est ici que sont restaurées les premières bobines de films réalisés dans
+                        la ville. </p>
                 </div>
             </section>
         </article>
@@ -82,41 +94,63 @@
             <div class="title2">
                 <h2>Théâtre</h2>
             </div>
-                <section class="two">
-                    <img src="./images/theatre.webp" alt="salle de theatre" class="image">
-                    <div>
-                        <h3>Roméo et Coqulettes</h3>
-                        <p>
-                            Date : 22 décembre 2024 <br>
-                            Lieu : Théâtre Gallinacée <br>
-                            Description :
-                            Une version revisitée et hilarante de Roméo et Juliette, où Juliette est une poule et Roméo un coq d’une ferme voisine.
-                            Blague associée : “Pourquoi Juliette a quitté Roméo ? Il n’arrêtait pas de rouler des œufs !”
-                        </p>
-                    </div>
-                </section>
+            <section class="two">
+                <img src="./images/theatre.webp" alt="salle de theatre" class="image">
+                <div>
+                    <h3>Roméo et Coqulettes</h3>
+                    <p>
+                        Date : 22 décembre 2024 <br>
+                        Lieu : Théâtre Gallinacée <br>
+                        Description :
+                        Une version revisitée et hilarante de Roméo et Juliette, où Juliette est une poule et Roméo un
+                        coq d’une ferme voisine.
+                        Blague associée : “Pourquoi Juliette a quitté Roméo ? Il n’arrêtait pas de rouler des œufs !”
+                    </p>
+                </div>
+            </section>
         </article>
 
         <article>
-            <section class="two-x" >
+            <section class="two-x">
                 <div>
                     <img src="./images/expo.webp" alt="salle de theatre">
-                    <h3>Les troupes en vogue  </h3>
-                    <p>Un article présentant les troupes les plus célèbres de la ville. Vous pourriez détailler leurs styles, leurs pièces phares (ex. “Roméo et Poussine” ou “Les Poulets Molière”), et leurs tournées dans les quartiers. </p>
+                    <h3>Les troupes en vogue </h3>
+                    <p>Un article présentant les troupes les plus célèbres de la ville. Vous pourriez détailler leurs
+                        styles, leurs pièces phares (ex. “Roméo et Poussine” ou “Les Poulets Molière”), et leurs
+                        tournées dans les quartiers. </p>
                 </div>
                 <div>
                     <img src="./images/etoile.webp" alt="salle de theatre">
                     <h3>Le théâtre pour tous</h3>
-                    <p>Un article sur l’accessibilité du théâtre à Wild City. Parlez des ateliers d’improvisation pour jeunes poussins ou des initiatives pour rendre les spectacles accessibles à tous les habitants, même ceux du poulailler nord. </p>
+                    <p>Un article sur l’accessibilité du théâtre à Wild City. Parlez des ateliers d’improvisation pour
+                        jeunes poussins ou des initiatives pour rendre les spectacles accessibles à tous les habitants,
+                        même ceux du poulailler nord. </p>
                 </div>
                 <div>
                     <img src="./images/plume.d'or.webp" alt="salle de theatre">
                     <h3>Critique théâtrale </h3>
-                    <p>Une rubrique pour analyser une pièce récente jouée à Wild City. Vous pouvez exagérer les critiques pour faire rire tout en mettant en avant l’événement. </p>
+                    <p>Une rubrique pour analyser une pièce récente jouée à Wild City. Vous pouvez exagérer les
+                        critiques pour faire rire tout en mettant en avant l’événement. </p>
                 </div>
             </section>
         </article>
-    </main> 
+    </main>
+    <footer>
+        <div class="footer-container">
+            <!-- Section 1 : Informations générales -->
+            <div class="footer-info">
+                <img src="logo.png" alt="Logo Wild City" class="footer-logo">
+                <p>Wild City, la ville où les poules dansent et chantent ! 🐔✨</p>
+            </div>
+
+            <!-- Section 4 : Mentions légales -->
+            <div class="footer-legal">
+                <p>&copy; 2024 Wild City. Tous droits réservés.</p>
+                <a href="#">Mentions légales</a> | <a href="#">CGU</a>
+            </div>
+        </div>
+    </footer>
     <script src="culture.js" defer></script>
 </body>
-</html>
+
+</html

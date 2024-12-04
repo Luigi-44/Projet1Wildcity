@@ -68,12 +68,18 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 
+// const menuBurger = document.querySelector(".burger-menu")
+// const navBar = document.querySelector("nav")
+// menuBurger.addEventListener('click',()=>{
+//     navBar.classList.toggle('mobile-menu')
+//     });
+})
     // Sélectionne l'élément du compte à rebours
 const countdown = document.getElementById("countdown");
-const event = document.getElementsByClassName("one")
+const evenement = document.querySelector(".one")
 // Définis la date de l'événement
 const eventDate = new Date("2024-12-25T20:00:00").getTime();
-
+const eventName = "Festival de la Plume d’Or";
 // Met à jour le compte à rebours toutes les secondes
 const updateCountdown = setInterval(function() {
   const now = new Date().getTime();  // Temps actuel
@@ -87,11 +93,17 @@ const updateCountdown = setInterval(function() {
 
   // Affiche le compte à rebours sur la page
   countdown.innerHTML = `${days}j ${hours}h ${minutes}m ${seconds}s`;
-  
-  // Si l'événement est arrivé, affiche un message spécial
+// Si l'événement est arrivé, affiche un message spécial
   if (timeRemaining < 0) {
     clearInterval(updateCountdown);  // Arrête le compte à rebours
     countdown.innerHTML = "L'événement a commencé ! 🎉";
   }
+  countdown.addEventListener("mouseover", () => {
+    evenement.style.transition = "transform 0.3s ease"; // Transition pour l'effet
+    evenement.style.transform = "scale(1.1)"; // Agrandit l'élément
+  });
+  countdown.addEventListener("mouseout", () => {
+    evenement.style.transform = "scale(1)"; // Retour à la taille normale
+  });
+  
 }, 1000);  // Met à jour chaque seconde
-});
