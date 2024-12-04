@@ -28,7 +28,7 @@ body {
 header {
 
     background: linear-gradient(rgba(228, 123, 123, 0.283), #1d2a35fd),
-        url(./Img/Newspaper.png);
+        url(./Img/Carnaval\ poulette.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -50,4 +50,57 @@ header img {
     width: 100%;
     filter: grayscale(60%);
     filter: opacity(50%);
+}
+article{
+    margin: 1rem 1.5rem  ;
+
+        h1{
+            margin-bottom: 1.5rem;
+            padding: 0;
+        }
+        .content{
+
+            div {
+                display: flex; 
+                gap: 1rem;
+                margin: 0 3rem 1rem 0;
+                /* TODO: media queries pour mobile flex wrap */
+
+                img{
+                    width: 250px;
+                    height:auto;
+                    max-height: 500px;
+                    
+            
+                }
+
+                p {
+           
+                display: -webkit-box; 
+                -webkit-line-clamp: 2; /* Nombre de lignes */ 
+                -webkit-box-orient: vertical; 
+                overflow:hidden; 
+                text-overflow: ellipsis; 
+                
+                
+            }
+            }
+            
+        }
+}
+footer{
+    background-color: #334A5E;
+    width: 100%;
+    height: auto;
+    color: #fff;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 10px 0;
+    margin-bottom: 0;
+    /* margin-top: 1.5rem; */
+    font-family:  "Montserrat", sans-serif;
+    font-size: 0.8rem;
 }
