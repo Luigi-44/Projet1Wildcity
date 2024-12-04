@@ -72,10 +72,12 @@ document.addEventListener("DOMContentLoaded", () => {
     window.addEventListener("scroll", () => {
         const nav = document.querySelector("nav");
         const searchBar = document.querySelector(".search-bar");
-        if (window.scrollY > 20) {
+        if (window.scrollY > 20 && window.innerWidth > 900) {
             nav.classList.add("shrink");
-        } else {
+            nav.style.width = "30%"
+        } else{
             nav.classList.remove("shrink");
+            nav.style.width = "90%"
         }
         });
 })
